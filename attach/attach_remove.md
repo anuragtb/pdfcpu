@@ -2,6 +2,4 @@
 layout: default
 ---
 
-# Optimize
-
-blabla
+# Remove Attachments

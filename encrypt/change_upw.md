@@ -2,6 +2,4 @@
 layout: default
 ---
 
-# Optimize
-
-blabla
+# Change User Password
