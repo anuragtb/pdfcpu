@@ -18,6 +18,8 @@ usage: pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-op
 | upw          | user password     |  
 | opw          | owner password    |
 
+<br>
+
 ## The validation modes
 
 * strict: (default) validates against PDF 32000-1:2008 (PDF 1.7)
