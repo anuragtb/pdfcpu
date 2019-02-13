@@ -18,13 +18,13 @@ This command converts images to PDF.
 usage: pdfcpu import [-v(erbose)|vv] [description] outFile imageFile...
 ```
 
-| flag         | description       | value
-|:-------------|:------------------|:-----
-| v(erbose)    | turn on logging   |
-| vv           | verbose logging   |
-| description  | configuration string |
-| outFile      | output PDF file |
-| imageFile    | image file list |
+| flag         | description
+|:-------------|:---------------
+| v(erbose)    | turn on logging
+| vv           | verbose logging
+| description  | configuration string
+| outFile      | output PDF file
+| imageFile    | image file list
 <br>
 
 ## Description
@@ -34,14 +34,14 @@ A configuration string that allows you to specify the details of the image layou
 | parameter | description     | value | default
 |:----------|:----------------|:------|:-----------------------------------------------------------------
 | d         | dimensions      | (width,height) in user units eg. '400 200'                    | d: 595 842
-| f         | form/paper size | a defined [paper size](../paper.md). Append L or P to enforce Landscape/Portrait| f: A4
+| f         | form/paper size | a defined [paper size](../paper.md). Append L or P to enforce landscape/portrait mode| f: A4
 | p         | position        | one of 'full' or the anchors: tl, tc, tr, l, c, r, bl, bc, br | p: full
 | o         | offset          | (dx,dy) in user units eg. '15 20'                             | o: 0 0
 | s         | scale factor    | 0.0 <= s <= 1.0 followed by optional 'abs' or 'rel'           | s: 0.5 rel
 
 The default description is:
 ```sh
-pdfcpu import 'f:A4, d:595 842, p:full, o:0 0, s:0.5 rel' out.pdf in.jpg
+'f:A4, d:595 842, p:full, o:0 0, s:0.5 rel'
 ```
 
 * You only have to specify any parameter diverging from the default.
@@ -56,7 +56,7 @@ pdfcpu import 'f:A5, p:c' out.pdf in.jpg
 ```
 <br>
 
-Render the image with dimensions (300,600) anchored to the bottom left corner with offset (20,20) and absolute scaling 1.0:
+Render the image with dimensions (300, 600) anchored to the bottom left corner with offset (20, 20) and absolute scaling 1.0:
 ```sh
 pdfcpu import 'd:300 600, p:bl, o:20 20, s:1.0 abs' out.pdf in.jpg
 ```
@@ -68,24 +68,23 @@ By using the implied default positioning parameter `p:full` the page size is goi
 ```sh
 pdfcpu import photo.pdf photo.png
 ```
-
 <br>
 
-Generate a PDF gallery of image files assuming `pics/` contains image files (jpg,png,tif):
+Generate a PDF gallery of image files assuming `pics/` contains image files (jpg, png, tif):
 
 ```sh
 pdfcpu import album.pdf pics/*
 ```
-
 <br>
+
 Generate a PDF gallery of image files each of them centered on the page with a default relative scaling of 0.5 by using a description string:
 
 ```sh
 pdfcpu import 'p:c' album.pdf pics/*
 ```
-
 <br>
-The following command also generates a PDF gallery but additionally configures the *Letter* output format and positioning anchored to the bottom left corner with a horizontal offset of 10 points and a vertical offset of 20 points in PDF user space with a scaling of 0.3 relative to page dimensions:
+
+The following command also generates a PDF gallery but additionally configures paper size *Letter* and positioning anchored to the bottom left corner with a horizontal offset of 10 points and a vertical offset of 20 points in PDF user space with a scaling of 0.3 relative to page dimensions:
 
 ```sh
 pdfcpu import 'f:Letter, p:bl, o:10 20, s:0.3' album.pdf *.jpg *.png
@@ -97,7 +96,6 @@ If a gallery created by *Import* ends up having some pages with images not in up
 ```sh
 pdfcpu rotate -pages 3-4 album.pdf -90
 ```
-
 <br>
 
 Please also refer to `pdfcpu help import` for details about this command.
