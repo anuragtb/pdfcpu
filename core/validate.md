@@ -24,3 +24,7 @@ usage: pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-op
 
 * **strict**: (default) validates against [PDF 32000-1:2008](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) (PDF 1.7)
 * relaxed: does not complain about common seen spec. violations.
+
+<br>
+
+Please also refer to `pdfcpu help validate` for details about this command.
