@@ -25,6 +25,7 @@ usage: pdfcpu import [-v(erbose)|vv] [description] outFile imageFile...
 | description  | configuration string
 | outFile      | output PDF file
 | imageFile    | image file list
+
 <br>
 
 ## Description
@@ -50,9 +51,9 @@ The default description is:
 
 <br>
 
-Render the image centered on A5 with relative scaling 0.5:
+Render the image centered on A5 in landscape mode with relative scaling 0.5:
 ```sh
-pdfcpu import 'f:A5, p:c' out.pdf in.jpg
+pdfcpu import 'f:A5L, p:c' out.pdf in.jpg
 ```
 <br>
 
