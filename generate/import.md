@@ -40,6 +40,20 @@ A configuration string that allows you to specify the details of the image layou
 | o         | offset          | (dx,dy) in user units eg. '15 20'                             | o: 0 0
 | s         | scale factor    | 0.0 <= s <= 1.0 followed by optional 'abs' or 'rel'           | s: 0.5 rel
 
+<br>
+
+### Position Anchors:
+
+|||||
+|-|-|-|-|
+|       | left | center |right
+|top    | tl   | tc     | tr
+|       | l    | c      |  r
+|bottom | bl   | bc     | br
+|||||
+
+<br>
+
 The default description is:
 ```sh
 'f:A4, d:595 842, p:full, o:0 0, s:0.5 rel'
