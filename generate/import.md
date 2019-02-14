@@ -7,6 +7,7 @@ layout: default
 This command converts images to PDF.
 
 * Every image file will be rendered onto a separate page.
+
 * If you pass in a single image file name a single page PDF will be created.
 * If you pass in a list of image files a picture gallery gets created which is the result of the concatenation of pages containing a single image each.
 * By supplying a configuration string you can specify layout details like position, dimensions, scaling and the paper size to be used.
@@ -24,7 +25,7 @@ usage: pdfcpu import [-v(erbose)|vv] [description] outFile imageFile...
 | vv           | verbose logging
 | description  | configuration string
 | outFile      | output PDF file
-| imageFile    | image file list
+| imageFile... | one or more input image files 
 
 <br>
 
