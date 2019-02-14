@@ -4,10 +4,12 @@ layout: default
 
 # Rotate
 
-This command rotates selected pages clockwise by a multiple of 90 degrees.
+Rotate selected pages clockwise by a multiple of 90 degrees.
+
+## Usage
 
 ```
-usage: pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] inFile rotation
+pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] inFile rotation
 ```
 
 | flag         | description       | value
@@ -17,7 +19,7 @@ usage: pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] inFile rotation
 | pages        | page selection    | see [here]()
 | rotation     | rotation angle    | -270, -180, -90, 90, 180, 270
 
-<br>
+## Examples
 
 Rotate all pages clockwise by 90 degrees:<br>
 ```sh
