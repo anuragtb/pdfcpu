@@ -17,17 +17,20 @@ pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] inFile rotation
 | v(erbose)    | turn on logging   |
 | vv           | verbose logging   |
 | pages        | page selection    | see [here]()
+| inFile       | input PDF file    |
 | rotation     | rotation angle    | -270, -180, -90, 90, 180, 270
 
 ## Examples
 
-Rotate all pages clockwise by 90 degrees:<br>
+Rotate all pages clockwise by 90 degrees:
+
 ```sh
 pdfcpu rotate test.pdf 90
 ```
+
 <br>
 Rotate the first two pages counter clockwise by 90 degrees:
 
 ```sh
-pdfcpu rotate -pages 1-2 -90
+pdfcpu rotate -pages 1-2 test.pdf -90
 ```
