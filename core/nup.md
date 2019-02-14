@@ -113,3 +113,5 @@ Both grid borders and margins are suppressed in this example and the output form
   <img border="2" src="resources/nup16img.png" height="200">
 </p>
 <br>
+
+Please also refer to `pdfcpu help nup`.

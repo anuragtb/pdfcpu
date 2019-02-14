@@ -83,3 +83,5 @@ pdfcpu grid 'o:rd' out.pdf 3 2 in.pdf
 ```
 Rearranges pages of in.pdf into 3x2 grids and write result to out.pdf using orientation 'right down'.<br>
 The output page size is the result of a 3(hor)x2(vert) page grid using in.pdf's page size.
+
+Please also refer to `pdfcpu help grid`.

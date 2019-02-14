@@ -4,4 +4,4 @@ layout: default
 
 # Optimize
 
-blabla
+Please also refer to `pdfcpu help optimize`.

@@ -112,4 +112,4 @@ pdfcpu rotate -pages 3-4 album.pdf -90
 ```
 <br>
 
-Please also refer to `pdfcpu help import` for details about this command.
+Please also refer to `pdfcpu help import`.

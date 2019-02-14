@@ -31,4 +31,4 @@ pdfcpu rotate -pages 1-2 -90
 
 <br>
 
-Please also refer to `pdfcpu help rotate` for details about this command.
+Please also refer to `pdfcpu help rotate`.

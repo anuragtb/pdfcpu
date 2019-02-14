@@ -27,4 +27,4 @@ usage: pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-op
 
 <br>
 
-Please also refer to `pdfcpu help validate` for details about this command.
+Please also refer to `pdfcpu help validate`.
