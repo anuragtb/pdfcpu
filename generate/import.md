@@ -4,7 +4,7 @@ layout: default
 
 # Import
 
-This command converts images to PDF.
+Convert one or more image files into a PDF file.
 
 * Every image file will be rendered onto a separate page.
 
@@ -13,10 +13,10 @@ This command converts images to PDF.
 * By supplying a configuration string you can specify layout details like position, dimensions, scaling and the paper size to be used.
 * The command will create the output file if it does not exist otherwise it will append to it. This feature comes in handy when you have a cover page and want to append a gallery to it.
 
-<br>
+## Usage
 
 ```
-usage: pdfcpu import [-v(erbose)|vv] [description] outFile imageFile...
+pdfcpu import [-v(erbose)|vv] [description] outFile imageFile...
 ```
 
 | flag         | description
@@ -29,21 +29,19 @@ usage: pdfcpu import [-v(erbose)|vv] [description] outFile imageFile...
 
 <br>
 
-## Description
+### Description
 
-A configuration string that allows you to specify the details of the image layout.
+A configuration string that allows you to specify the details of the image layout on the page.
 
-| parameter | description     | value | default
+| parameter | description     | values | default
 |:----------|:----------------|:------|:-----------------------------------------------------------------
-| d         | dimensions      | (width,height) in user units eg. '400 200'                    | d: 595 842
-| f         | form/paper size | a defined [paper size](../paper.md). Append L or P to enforce landscape/portrait mode| f: A4
-| p         | position        | one of 'full' or the anchors: tl, tc, tr, l, c, r, bl, bc, br | p: full
+| d         | dimensions      | (width, height) in user units eg. '400 200'                    | d: 595 842
+| f         | form/paper size | [paper size](../paper.md) to be used. Append L or P to enforce landscape/portrait mode| f: A4
+| p         | position        | one of `full` or the anchors: `tl, tc, tr, l, c, r, bl, bc, br` | p: full
 | o         | offset          | (dx,dy) in user units eg. '15 20'                             | o: 0 0
-| s         | scale factor    | 0.0 <= s <= 1.0 followed by optional 'abs' or 'rel'           | s: 0.5 rel
+| s         | scale factor    | 0.0 <= s <= 1.0 followed by optional `abs` or `rel`           | s: 0.5 rel
 
-<br>
-
-### Position Anchors
+### Anchors for positioning
 
 |||||
 |-|-|-|-|
@@ -61,9 +59,11 @@ The default description is:
 
 * You only have to specify any parameter diverging from the default.
 * Only one of dimensions or format is allowed.
-* position: 'full' enforces image dimensions equal to page dimensions.
+* position: The default `full` enforces image dimensions equal to page dimensions.
 
 <br>
+
+## Examples
 
 Render the image centered on A5 in landscape mode with relative scaling 0.5:
 ```sh
@@ -111,6 +111,3 @@ If a gallery created by *Import* ends up having some pages with images not in up
 ```sh
 pdfcpu rotate -pages 3-4 album.pdf -90
 ```
-<br>
-
-Please also refer to `pdfcpu help import`.

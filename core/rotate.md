@@ -22,7 +22,7 @@ pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] inFile rotation
 
 ## Examples
 
-Rotate all pages clockwise by 90 degrees:
+Rotate all pages of a PDF file clockwise by 90 degrees:
 
 ```sh
 pdfcpu rotate test.pdf 90
