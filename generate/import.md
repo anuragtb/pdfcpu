@@ -43,6 +43,7 @@ A configuration string that allows you to specify the details of the image layou
 <br>
 
 ### Position Anchors
+
 |||||
 |-|-|-|-|
 |       | left | center |right
