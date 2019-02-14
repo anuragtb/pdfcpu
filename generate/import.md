@@ -25,13 +25,13 @@ pdfcpu import [-v(erbose)|vv] [description] outFile imageFile...
 | vv           | verbose logging
 | description  | configuration string
 | outFile      | output PDF file
-| imageFile... | one or more input image files 
+| imageFile... | one or more input image files
 
 <br>
 
 ### Description
 
-A configuration string that allows you to specify the details of the image layout on the page.
+A configuration string to specify the details of the image layout on the page.
 
 | parameter | description     | values | default
 |:----------|:----------------|:------|:-----------------------------------------------------------------
@@ -41,7 +41,9 @@ A configuration string that allows you to specify the details of the image layou
 | o         | offset          | (dx,dy) in user units eg. '15 20'                             | o: 0 0
 | s         | scale factor    | 0.0 <= s <= 1.0 followed by optional `abs` or `rel`           | s: 0.5 rel
 
-### Anchors for positioning
+<br>
+
+#### Anchors for positioning
 
 |||||
 |-|-|-|-|
@@ -52,7 +54,8 @@ A configuration string that allows you to specify the details of the image layou
 
 <br>
 
-The default description is:
+#### Default description
+
 ```sh
 'f:A4, d:595 842, p:full, o:0 0, s:0.5 rel'
 ```
