@@ -49,7 +49,7 @@ This is usually associated with the writing direction used in the document to be
 
 | value | description |
 |:------|-------------|
-| rd    | right down  |
+| rd    | right down, default |
 | dr    | down right  |
 | ld    | left down   |
 | dl    | down left   |
@@ -70,11 +70,12 @@ This is usually associated with the writing direction used in the document to be
 
 ## Examples
 
-The page size of the output file is a grid of specified dimensions in original page units.<br>
-Pages may be big but that's ok since they are not supposed to be printed.
+The page size of the output file is a grid of specified dimensions in original page units. Pages may be big but that's ok since they are not supposed to be printed.
 
-One use case mentioned by the community was to produce PDF files for source code listings eg. in the form of 1x10 grid pages. In the
-following example we use a 1x4 grid since this is easier to visualize. Rearrange pages of in.pdf into pages composed of 1x4 grids and write the result to out.pdf using the default orientation. The output page size is the result of a 1(horizontal) x 4(vertical) grid using in.pdf's page size:
+One use case mentioned by the community was to produce PDF files for source code listings eg. in the form of 1x10 grid pages.<br>
+In the following example we use a 1x4 grid since this is easier to visualize.
+
+Rearrange pages of in.pdf into pages composed of 1x4 grids and write the result to out.pdf using the default orientation. The output page size is the result of a 1(horizontal) x 4(vertical) grid using in.pdf's page size:
 
 ```sh
 pdfcpu grid 'b:off' out.pdf 1 4 in.pdf
@@ -86,7 +87,8 @@ pdfcpu grid 'b:off' out.pdf 1 4 in.pdf
 </p>
 
 <br>
-When applied to image files this command produces simple photo galleries of arbitrary dimensions in PDF form. Arrange imagefiles onto a 5x2 page grid and write the result to out.pdf using a grid cell size of 500x500:
+When applied to image files this command produces simple photo galleries of arbitrary dimensions in PDF form.<br>
+Arrange imagefiles onto a 5x2 page grid and write the result to out.pdf using a grid cell size of 500x500:
 
 ```sh
 pdfcpu grid 'd:500 500, m:20, b:off' out.pdf 5 2 *.jpg
@@ -99,7 +101,7 @@ pdfcpu grid 'd:500 500, m:20, b:off' out.pdf 5 2 *.jpg
 <br>
 
 
-Rearrange pages of in.pdf into 2x2 grids and write result to out.pdf using the default orientation.<br>
+Rearrange pages of in.pdf into 2x2 grids and write result to out.pdf using the default orientation.
 The output page size is the result of a 2(hor)x2(vert) page grid using page size Legal in landscape mode:
 
 ```sh
@@ -107,7 +109,7 @@ pdfcpu grid 'LegalL' out.pdf 2 2 in.pdf
 ```
 
 <br>
-Rearrange pages of in.pdf into 3x2 grids and write result to out.pdf using orientation 'right down'.<br>
+Rearrange pages of in.pdf into 3x2 grids and write result to out.pdf using orientation 'right down'.
 The output page size is the result of a 3(hor)x2(vert) page grid using in.pdf's page size:
 
 ```sh
