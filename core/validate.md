@@ -12,14 +12,14 @@ This command checks PDF files for compliance with the specification [PDF 32000-1
 pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-opw ownerpw] inFile
 ```
 
-| flag         | description        | values | default
-|:-------------|:-------------------|:-------|--------
-| v(erbose)    | turn on logging    |
-| vv           | verbose logging    |
-| mode         | validation mode    | strict, relaxed | relaxed
-| upw          | user password      |  
-| opw          | owner password     |
-| inFile       | the input PDF file |
+| flag         | description     | values | default
+|:-------------|:----------------|:-------|--------
+| v(erbose)    | turn on logging |
+| vv           | verbose logging |
+| mode         | validation mode | strict, relaxed | relaxed
+| upw          | user password   |  
+| opw          | owner password  |
+| inFile       | input PDF file  |
 
 
 <br>
@@ -40,7 +40,7 @@ validation ok
 
 This is the default mode for validation.
 
-It behaves like strict but does not complain about common seen violations of the specification by PDF writers.
+It behaves like strict but does not complain about common seen violations of the specification by PDF writers
 
 ```sh
 pdfcpu validate test.pdf
