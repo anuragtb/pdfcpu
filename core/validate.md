@@ -12,11 +12,11 @@ This command checks PDF files for compliance with the specification [PDF 32000-1
 pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-opw ownerpw] inFile
 ```
 
-| flag         | description       | value
-|:-------------|:------------------|:-----
+| flag         | description       | values | default
+|:-------------|:------------------|:-------|--------
 | v(erbose)    | turn on logging   |
 | vv           | verbose logging   |
-| mode         | validation mode   | strict, relaxed
+| mode         | validation mode   | strict, relaxed | relaxed
 | upw          | user password     |  
 | opw          | owner password    |
 
@@ -28,6 +28,20 @@ pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-opw owner
 
 This mode validates against the specification [PDF 32000-1:2008](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) covering all PDF versions up to 1.7.
 
+```sh
+pdfcpu validate -mode strict upc.pdf
+validating(mode=strict) upc.pdf ...
+validation ok
+```
+
 ### Relaxed
 
-This mode behaves like strict but does not complain about common seen violations of the specification by PDF writers.
+This is the default mode for validation.
+
+It behaves like strict but does not complain about common seen violations of the specification by PDF writers.
+
+```sh
+pdfcpu validate test.pdf
+validating(mode=relaxed) test.pdf ...
+validation ok
+```
