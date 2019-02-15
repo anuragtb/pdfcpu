@@ -4,8 +4,9 @@ layout: default
 
 # Grid
 
-Rearrange the pages of a PDF file into grid pages for enhanced reading experience.<br>
-Arrange image files into grid pages for enhanced browsing experience.
+* Rearrange the pages of a PDF file into grid pages for enhanced reading experience.
+
+* Arrange image files into grid pages for enhanced browsing experience.
 
 
 ## Usage
