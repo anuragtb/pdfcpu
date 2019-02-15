@@ -48,9 +48,9 @@ A configuration string to specify the details of the image layout on the page.
 |||||
 |-|-|-|-|
 |       | left | center |right
-|top    | tl   | tc     | tr
-|       | l    | c      |  r
-|bottom | bl   | bc     | br
+|top    | `tl` | `tc`   | `tr`
+|       | `l`  | `c`    |  `r`
+|bottom | `bl` | `bc`   | `br`
 
 <br>
 
@@ -61,20 +61,21 @@ A configuration string to specify the details of the image layout on the page.
 ```
 
 * You only have to specify any parameter diverging from the default.
+
 * Only one of dimensions or format is allowed.
-* position: The default `full` enforces image dimensions equal to page dimensions.
+* The default position `full` enforces image dimensions equal to page dimensions.
 
 <br>
 
 ## Examples
 
-Render the image centered on A5 in landscape mode with relative scaling 0.5:
+Render an image centered on A5 in landscape mode with relative scaling 0.5:
 ```sh
 pdfcpu import 'f:A5L, p:c' out.pdf in.jpg
 ```
 <br>
 
-Render the image with dimensions (300, 600) anchored to the bottom left corner with offset (20, 20) and absolute scaling 1.0:
+Render an image with dimensions (300, 600) anchored to the bottom left corner with offset (20, 20) and absolute scaling 1.0:
 ```sh
 pdfcpu import 'd:300 600, p:bl, o:20 20, s:1.0 abs' out.pdf in.jpg
 ```
