@@ -6,8 +6,10 @@ layout: default
 
 This command checks PDF files for compliance with the specification [PDF 32000-1:2008](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) (PDF 1.7). Any PDF you would like to process with `pdfcpu` needs to pass validation.
 
+## Usage
+
 ```
-usage: pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-opw ownerpw] inFile
+pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-opw ownerpw] inFile
 ```
 
 | flag         | description       | value
@@ -20,11 +22,12 @@ usage: pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-op
 
 <br>
 
-## The validation modes
+## Mode
 
-* **strict**: (default) validates against [PDF 32000-1:2008](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) (PDF 1.7)
-* relaxed: does not complain about common seen spec. violations.
+### Strict
 
-<br>
+This mode validates against the specification [PDF 32000-1:2008](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) covering all PDF versions up to 1.7.
 
-Please also refer to `pdfcpu help validate`.
+### Relaxed
+
+This mode behaves like strict but does not complain about common seen violations of the specification by PDF writers.
