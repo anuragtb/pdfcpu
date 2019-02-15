@@ -12,13 +12,13 @@ Rotate selected pages clockwise by a multiple of 90 degrees.
 pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] inFile rotation
 ```
 
-| flag         | description       | value
-|:-------------|:------------------|:-----
-| v(erbose)    | turn on logging   |
-| vv           | verbose logging   |
-| pages        | page selection    | see [here]()
-| inFile       | PDF input file    |
-| rotation     | rotation angle    | -270, -180, -90, 90, 180, 270
+| flag         | description       | required | values
+|:-------------|:------------------|:---------|:------
+| v(erbose)    | turn on logging   | no
+| vv           | verbose logging   | no
+| pages        | page selection    | no       | all pages
+| inFile       | PDF input file    | yes
+| rotation     | rotation angle    | yes      | -270, -180, -90, 90, 180, 270
 
 ## Examples
 
