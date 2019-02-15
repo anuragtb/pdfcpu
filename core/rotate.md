@@ -17,7 +17,7 @@ pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] inFile rotation
 | v(erbose)    | turn on logging   |
 | vv           | verbose logging   |
 | pages        | page selection    | see [here]()
-| inFile       | input PDF file    |
+| inFile       | PDF input file    |
 | rotation     | rotation angle    | -270, -180, -90, 90, 180, 270
 
 ## Examples
