@@ -4,8 +4,20 @@ layout: default
 
 # N-up
 
+* Rearrange all pages of `inFile` file in order to reduce the number of pages and write the result to `outFile`.
+Each new page is composed of multiple original pages in a grid like fashion.
+The original page size is preserved.
+
+* Create `outFile` for a given [paper size](../paper.md) and arrange `imageFiles` on pages in a grid like fashion.
+For a single image file create a single page PDF file and fill the grid with copies of the image.
+
+* The [N-up](https://en.wikipedia.org/wiki/N-up) value `n` controls the grid layout. 
+
+## Usage
+
 ```
-usage: pdfcpu nup [-v(erbose)|vv] [-pages pageSelection] [description] outFile n inFile|imageFiles...
+pdfcpu nup [-v(erbose)|vv] [-pages pageSelection] [description] outFile n inFile|imageFiles...
+```
 
 This reduces the number of pages and therefore the required print time.
 If the input is one imageFile a single page n-up PDF gets generated.
