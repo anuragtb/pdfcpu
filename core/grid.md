@@ -70,7 +70,7 @@ This is usually associated with the writing direction used in the document to be
 
 ## Examples
 
-The page size of the output file is a grid of specified dimensions in original page units. Pages may be big but that's ok since they are not supposed to be printed.
+The page size of the output file is a grid of specified dimensions in original page units. Output pages may be big but that's ok since they are not supposed to be printed.
 
 One use case mentioned by the community was to produce PDF files for source code listings eg. in the form of 1x10 grid pages.<br>
 In the following example we use a 1x4 grid since this is easier to visualize.

@@ -4,7 +4,7 @@ layout: default
 
 # Split
 
-Generate a set of PDF files for the `inFile` in `outDir` according to given `span` value.
+Generate a set of PDF files for `inFile` in `outDir` according to given `span` value.
 
 ## Usage
 

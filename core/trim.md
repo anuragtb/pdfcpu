@@ -4,7 +4,7 @@ layout: default
 
 # Trim
 
-Generate a trimmed version of inFile for selected pages.
+Generate a trimmed version of `inFile` for selected pages.
 
 ## Usage
 
