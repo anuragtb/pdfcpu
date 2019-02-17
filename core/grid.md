@@ -97,7 +97,7 @@ pdfcpu grid 'd:500 500, m:20, b:off' out.pdf 5 2 *.jpg
 
 
 <p align="center">
-  <img border="1" src="resources/gridimg.png" height="300">
+  <img border="1" src="resources/gridimg.png">
 </p>
 <br>
 
