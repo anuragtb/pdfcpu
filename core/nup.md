@@ -68,8 +68,7 @@ A configuration string to specify the details of the grid layout.
 
 #### Orientation
 
-For PDF input files only.<br>
-This is usually associated with the writing direction used in the document to be processed.
+This is usually associated with the writing direction used in the document to be processed. For PDF input files only
 
 | value | description |
 |:------|-------------|
@@ -94,7 +93,7 @@ This is usually associated with the writing direction used in the document to be
 
 ## Examples
 
-Create `out.pdf`. Each page fits `4` original pages of `in.pdf` into a 2x2 grid:
+Create `out.pdf` by applying 4-up to `in.pdf`. Each page fits `4` original pages of `in.pdf` into a 2x2 grid:
 ```sh
 pdfcpu nup out.pdf 4 in.pdf
 ```
@@ -132,8 +131,9 @@ pdfcpu nup 'f:A4L' out.pdf 4 *.jpg *.png *.tif
 
 <br>
 
-A single image input file will produce a single page PDF `out.pdf` with the image `logo.jpg` `16`-up'ed.
-Both grid borders and margins are suppressed in this example and the output format is `Ledger`:
+A single image input file supplied will produce a single page PDF ouput file.<br>
+In the following example `logo.jpg` will be `16`-up'ed onto `out.pdf`.
+Both grid borders and margins are suppressed and the output format is `Ledger`:
 
 ```sh
 pdfcpu nup 'f:Ledger, b:off, m:0' out.pdf 16 logo.jpg
