@@ -37,7 +37,7 @@ A configuration string to specify the details of the grid layout.
 |:----------|:----------------|:--------------------------------------------|:--
 | d         | dimensions      | (width, height) in user units eg. '400 200' | d: 595 842
 | f         | form/paper size | [paper size](../paper.md) to be used. Append L or P to enforce landscape/portrait mode| f: A4
-| o         | orientation     | one of `rd, dr, ld, dl`                     | o: rd
+| o         | orientation     | one of `rd, dr, ld, dl` for PDF input files | o: rd
 | b         | element border  | on/off true/false                           | b: on
 | m         | element margin  | integer >= 0                                | m: 0
 
@@ -45,6 +45,7 @@ A configuration string to specify the details of the grid layout.
 
 #### Orientation
 
+For PDF input files only.<br>
 This is usually associated with the writing direction used in the document to be processed.
 
 | value | description |

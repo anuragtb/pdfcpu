@@ -11,85 +11,101 @@ The original page size is preserved.
 * Create `outFile` for a given [paper size](../paper.md) and arrange `imageFiles` on pages in a grid like fashion.
 For a single image file create a single page PDF file and fill the grid with copies of the image.
 
-* The [N-up](https://en.wikipedia.org/wiki/N-up) value `n` controls the grid layout. 
+* The [N-up](https://en.wikipedia.org/wiki/N-up) value `n` controls the grid layout.
+
+* Proper rotation based on involved aspect ratios will be applied during the process.
+
+<br>
 
 ## Usage
 
 ```
-pdfcpu nup [-v(erbose)|vv] [-pages pageSelection] [description] outFile n inFile|imageFiles...
+pdfcpu nup|n-up [-v(erbose)|vv] [-pages pageSelection] [description] outFile n inFile|imageFile...
 ```
 
-This reduces the number of pages and therefore the required print time.
-If the input is one imageFile a single page n-up PDF gets generated.
+| flag         | description          | required
+|:-------------|:---------------------|---------
+| v(erbose)    | turn on logging      | no
+| vv           | verbose logging      | no
+| pages        | page selection       | no
+| description  | configuration string | no
+| outFile      | PDF output file      | yes
+| n            | the N-up value       | yes
+| inFile       | PDF input file       | inFile or imageFile(s)
+| imageFile... | one or more images   | inFile or imageFile(s)
 
- verbose, v ... turn on logging
-         vv ... verbose logging
-      pages ... page selection for inFile only
-description ... dimensions, format, orientation
-    outFile ... output pdf file
-          n ... the n-Up value (see below for details)
-     inFile ... input pdf file
- imageFiles ... input image file(s)
+<br>
 
-                             portrait landscape
- Possible values for n: 2 ...  1x2       2x1
-                        3 ...  1x3       3x1
-                        4 ...  2x2
-                        8 ...  2x4       4x2
-                        9 ...  3x3
-                       12 ...  3x4       4x3
-                       16 ...  4x4
+### N-up Value
 
-    <description> is a comma separated configuration string containing:
+The following table lists all supported values for `n` and the resulting grid layout with respect to the orientation of the chosen output [paper size](../paper.md). See [here](https://en.wikipedia.org/wiki/N-up) for a thorough explanation of N-up.
 
-    optional entries:
+| value | portrait | landscape
+|:------|:---------|----------
+| 2     | 1x2      | 2x1
+| 3     | 1x3      | 3x1
+| 4     | 2x2      | 2x2
+| 8     | 2x4      | 4x2
+| 9     | 3x3      | 3x3
+| 12    | 3x4      | 4x3
+| 16    | 4x4      | 4x4
 
-        (defaults: d:595 842, f:A4, o:rd, b:on, m:3)
+<br>
 
-    d: dimensions (width,height) in user units eg. '400 200'
+### Description
 
-    f: form/paper size, eg. A4, Letter, Legal...
-                           Please refer to "pdfcpu help paper" for a comprehensive list of defined paper sizes.
-                           Appended 'L' enforces landscape mode. (eg. A3L)
-                           Appended 'P' enforces portrait mode. (eg. TabloidP)
-                           Only one of dimensions or format is allowed.
+A configuration string to specify the details of the grid layout.
 
-    o: orientation, one of rd ... right down (=default)
-                           dr ... down right
-                           ld ... left down
-                           dl ... down left
-                           Orientation applies to PDF input files only.
+| parameter | description     | values                                      | default
+|:----------|:----------------|:--------------------------------------------|:--
+| d         | dimensions      | (width, height) in user units eg. '400 200' | d: 595 842
+| f         | form/paper size | [paper size](../paper.md) to be used. Append L or P to enforce landscape/portrait mode| f: A4
+| o         | orientation     | one of `rd, dr, ld, dl` for PDF input files | o: rd
+| b         | element border  | on/off true/false                           | b: on
+| m         | element margin  | integer >= 0                                | m: 0
 
-    b: draw border ... on/off true/false
+<br>
 
-    m: margin for n-up content: int >= 0
+#### Orientation
+
+For PDF input files only.<br>
+This is usually associated with the writing direction used in the document to be processed.
+
+| value | description |
+|:------|-------------|
+| rd    | right down, default |
+| dr    | down right  |
+| ld    | left down   |
+| dl    | down left   |
+
+<br>
+
+#### Default description
+
+```sh
+'f:A4, d:595 842, o:rd, b:on, m:3'
 ```
 
-The `nup` (`n-up`) command rearranges the pages of a PDF file in order to reduce its page count.
-This is achieved by rendering the input pages onto a grid which dimensions are defined by the supplied [N-up](https://en.wikipedia.org/wiki/N-up) value. It is also possible to process one or more image files with this command (see below).
+* You only have to specify any parameter diverging from the default.
 
-Defined values for `n`: 2, 3, 4, 6, 8, 9, 12, 16.
+* Only one of dimensions or format is allowed.
 
-Defined values for `orientation`:
-* **rd** (right, down) = default
-* dr (down, right)
-* ld (left, down)
-* dl (down, left)<br>
+<br>
 
-Proper rotation based on involved aspect ratios will be applied during the process. 
+## Examples
 
+Create `out.pdf`. Each page fits `4` original pages of `in.pdf` into a 2x2 grid:
 ```sh
 pdfcpu nup out.pdf 4 in.pdf
 ```
-
- produces a PDF-file where each page fits 4 original pages into a 2x2 grid:<br>
 
 <p align="center">
   <img border="2" src="resources/nup4pdf.png" height="200">
 </p>
 
-The output file will use the page size of the input file unless explicitly declared by a description string like so:<br>
+<br>
 
+The output file will use the page size of the input file unless explicitly declared by a description string like so:
 ```sh
 pdfcpu nup 'f:A4' out.pdf 9 in.pdf
 ```
@@ -98,32 +114,32 @@ pdfcpu nup 'f:A4' out.pdf 9 in.pdf
   <img border="2" src="resources/nup9pdf.png" width="145">
 </p>
 
-Please refer to [pdfcpu paper](../paper.md) for a list of supported paper formats.
-Most well known paper size standards are supported.
+<br>
 
 `nup` also accepts a list of image files with the result of rendering all images
-in N-up fashion into a PDF file using the specified paper size (default=A4):<br>
+in N-up fashion into a PDF file using the specified paper size (default=A4).
+Generate `out.pdf` using `A4 L`andscape mode where each page fits 4 images onto a 2x2 grid.
+The grid element border lines are rendered by default as well is the default margin of 3 points applied:
 
 ```sh
 pdfcpu nup 'f:A4L' out.pdf 4 *.jpg *.png *.tif
 ````
 
-generates a PDF file using *A4 Landscape* where each page fits 4 images onto a 2x2 grid.
-Grid border lines are rendered by default:
+
 <p align="center">
   <img border="2" src="resources/nup4img.png" height="200">
 </p>
 
-A single image input file will produce a single page PDF with the image N-up'ed accordingly, eg.:
+<br>
+
+A single image input file will produce a single page PDF `out.pdf` with the image `logo.jpg` `16`-up'ed.
+Both grid borders and margins are suppressed in this example and the output format is `Ledger`:
 
 ```sh
 pdfcpu nup 'f:Ledger, b:off, m:0' out.pdf 16 logo.jpg
 ```
 
-Both grid borders and margins are suppressed in this example and the output format is *Ledger*:
+
 <p align="center">
   <img border="2" src="resources/nup16img.png" height="200">
 </p>
-<br>
-
-Please also refer to `pdfcpu help nup`.
