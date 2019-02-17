@@ -92,17 +92,17 @@ e.g. 'Draft'                                                  'logo.png'
 
 
 <p align="center">
-  <img border="1" src="resources/wmTextSample.png" height="200">
+  <img border="1" src="resources/wmTextSample.png" height="400">
 </p>
 
 <p align="center">
-  <img border="1" src="resources/wmText2Sample.png" height="200">
+  <img border="1" src="resources/wmText2Sample.png" height="400">
 </p>
 
 <p align="center">
-  <img border="1" src="resources/wmImageSample.png" height="200">
+  <img border="1" src="resources/wmImageSample.png" height="400">
 </p>
 
 <p align="center">
-  <img border="1" src="resources/wmPDFSample.jpg" height="200">
+  <img border="1" src="resources/wmPDFSample.jpg" height="400">
 </p>
