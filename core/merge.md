@@ -19,7 +19,14 @@ pdfcpu merge [-v(erbose)|vv] outFile inFile...
 | outFile      | PDF output file |  
 | inFile...    | a list of at least 2 PDF input files subject to concatenation |
 
-<br>
+## Restrictions
+
+The following PDF features are not carried over into the merged document:
+
+* Annotations
+* Struct Trees
+* Forms ?
+* ...
 
 ## Example
 
