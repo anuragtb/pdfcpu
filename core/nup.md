@@ -126,7 +126,7 @@ pdfcpu nup 'f:A4L' out.pdf 4 *.jpg *.png *.tif
 
 
 <p align="center">
-  <img border="2" src="resources/nup4img.png" height="400">
+  <img border="2" src="resources/nup4img.png" height="200">
 </p>
 
 <br>
@@ -141,5 +141,5 @@ pdfcpu nup 'f:Ledger, b:off, m:0' out.pdf 16 logo.jpg
 
 
 <p align="center">
-  <img border="2" src="resources/nup16img.png" height="400">
+  <img border="2" src="resources/nup16img.png" height="200">
 </p>
