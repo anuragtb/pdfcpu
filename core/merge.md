@@ -17,7 +17,7 @@ pdfcpu merge [-v(erbose)|vv] outFile inFile...
 | v(erbose)    | turn on logging |
 | vv           | verbose logging |
 | outFile      | PDF output file |  
-| inFile...    | a list of at least 2 PDF input files subject to concatenation |
+| inFile...    | at least 2 PDF input files subject to concatenation |
 
 ## Restrictions
 
