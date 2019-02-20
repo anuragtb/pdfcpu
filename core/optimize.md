@@ -19,8 +19,8 @@ pdfcpu optimize [-v(erbose)|vv] [-stats csvFile] [-upw userpw] [-opw ownerpw] in
 | stats        | CSV output file     | no       | off
 | upw          | user password       | no
 | opw          | owner password      | no
-<br>
 
+<br>
 
 | parameter    | description         | required | default
 |:-------------|:--------------------|:---------|:-

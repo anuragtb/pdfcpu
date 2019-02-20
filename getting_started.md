@@ -6,7 +6,8 @@ layout: default
 
 ## Common Flags
 
-The following flags are used by most commands. Please refer to `pdfcpu help` + *command* for specific usage information.
+The following flags are used by most commands.<br>
+Please refer to `pdfcpu help` + *command* for specific usage information.
 
 ### verbose
 
