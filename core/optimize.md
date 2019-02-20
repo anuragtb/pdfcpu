@@ -21,6 +21,7 @@ pdfcpu optimize [-v(erbose)|vv] [-stats csvFile] [-upw userpw] [-opw ownerpw] in
 | opw          | owner password      | no
 <br>
 
+
 | parameter    | description         | required | default
 |:-------------|:--------------------|:---------|:-
 | inFile       | PDF input file      | yes

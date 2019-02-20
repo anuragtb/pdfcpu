@@ -14,16 +14,16 @@ Enables logging on the standard output.
 
 ### vv
 
-*Very verbose*.
+*Very verbose*.<br>
 Enables verbose logging on the standard output.
 
 ### pages
 
-A comma separated list of expressions that defines selected pages of a PDF input file.
+A comma separated list of expressions defining the selected pages of a PDF input file.
 
 ### mode
 
-Used by various commands.
+Used by various commands.<br>
 Please refer to [validate](core/validate.md) and [extract](extract/extract.md) for more information. 
 
 ### opw
@@ -31,6 +31,7 @@ Please refer to [validate](core/validate.md) and [extract](extract/extract.md) f
 *Owner password*<br>
 Allows full access to an encrypted document including the ability to change the document’s passwords and access permissions.
 
-### upw - the user password
+### upw
 
+*User password*<br>
 Opens an encrypted document and gives access corresponding to any configured user access permissions.
