@@ -12,12 +12,21 @@ Merge 2 or more PDF files into `outFile`.
 pdfcpu merge [-v(erbose)|vv] outFile inFile...
 ```
 
-| flag         | description     |
-|:-------------|:----------------|
-| v(erbose)    | turn on logging |
-| vv           | verbose logging |
-| outFile      | PDF output file |  
-| inFile...    | at least 2 PDF input files subject to concatenation |
+### Flags
+
+| name         | description       | required | default
+|:-------------|:------------------|:---------|:-
+| [verbose](../getting_started.md) | turn on logging     | no       | off
+| [vv](../getting_started.md)      | verbose logging     | no       | off
+
+### Arguments
+
+| name         | description         | required
+|:-------------|:--------------------|:--------
+| outFile      | PDF output file     | yes  
+| inFile...    | at least 2 PDF input files subject to concatenation | yes
+
+<br>
 
 ## Restrictions
 
