@@ -9,7 +9,7 @@ layout: default
 The following flags are used by most commands.<br>
 Please refer to `pdfcpu help` + *command* for specific usage information.
 
-### verbose
+### verbose, v
 
 Enables logging on the standard output.
 
@@ -18,11 +18,11 @@ Enables logging on the standard output.
 *Very verbose*.<br>
 Enables verbose logging on the standard output.
 
-### pages
+### pages, p
 
 A comma separated list of expressions defining the selected pages of a PDF input file.
 
-### mode
+### mode, m
 
 Used by various commands.<br>
 Please refer to [validate](core/validate.md), [extract](extract/extract.md) and [encrypt](encrypt/encryptPDF.md) for more information. 
