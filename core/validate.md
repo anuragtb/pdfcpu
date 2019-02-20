@@ -22,8 +22,6 @@ pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-opw owner
 | [upw](../getting_started.md)     | user password       | no
 | [opw](../getting_started.md)     | owner password      | no
 
-<br>
-
 #### Mode
 
 ##### Strict
@@ -32,8 +30,7 @@ This mode validates against the specification [PDF 32000-1:2008](https://www.ado
 
 ##### Relaxed
 
-This is the default mode for validation.
-
+This is the default mode for validation.<br>
 It behaves like strict but does not complain about common seen violations of the specification by PDF writers.
 
 <br>
