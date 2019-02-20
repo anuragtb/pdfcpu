@@ -25,7 +25,7 @@ pdfcpu optimize [-v(erbose)|vv] [-stats csvFile] [-upw userpw] [-opw ownerpw] in
 #### Stats
 
 The name of a CSV file name.<br>
-This command appends one CSV line with stats about memory usage before and after optimization, PDF object usage and other useful information for debugging.
+This command appends one CSV line with stats about memory usage, PDF object usage and other useful information for debugging.<br>
 Optimize a group of PDF input files and consolidate stats into the same CSV file for comparison.
 
 ### Arguments
@@ -44,12 +44,16 @@ pdfcpu optimize test.pdf
 writing test_new.pdf ...
 ```
 
+<br>
+
 Optimize `test.pdf` and write the result to `test_opt.pdf`:
 
 ```sh
 pdfcpu optimize test.pdf test_opt.pdf
 writing test_opt.pdf ...
 ```
+
+<br>
 
 Optimize `test.pdf`, write the result to `test_opt.pdf`, append stats to `stats.csv` and produce logging on standard out:
 
@@ -212,7 +216,7 @@ Duplicate Fonts:
 No image info available.
 
 
-writing a.pdf ...
+writing test_opt.pdf ...
  INFO: 2019/02/20 23:20:12 writing to a.pdf
 STATS: 2019/02/20 23:20:12 0 original empty xref entries:
 STATS: 2019/02/20 23:20:12 0 original redundant font entries:
