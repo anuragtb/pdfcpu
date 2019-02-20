@@ -35,6 +35,8 @@ Optimize a group of PDF input files and consolidate stats into the same CSV file
 | inFile       | PDF input file      | yes
 | outFile      | PDF output file     | no       | inFile_new.pdf
 
+<br>
+
 ## Example
 
 Optimize `test.pdf` and write the result to `test_new.pdf`:
