@@ -25,10 +25,10 @@ pdfcpu optimize [-v(erbose)|vv] [-stats csvFile] [-upw userpw] [-opw ownerpw] in
 #### Stats
 
 The name of a CSV file name.<br>
-This command appends one CSV line with stats about memory usage, PDF object usage and other useful information for debugging.<br>
+This command appends one CSV line with stats about memory usage, PDF object usage and other useful information for debugging.
 Optimize a group of PDF input files and consolidate stats into the same CSV file for comparison.
 
-The following `cat`s a stats.csv with a header line and a single stats line. Not very readable but just to give the basic idea:
+The following `cat`s a stats.csv with a header line and a single stats line:
 
 ```
 cat stats.csv
