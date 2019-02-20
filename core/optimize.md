@@ -45,7 +45,7 @@ test.pdf;1.2;;;;6 KB (67.4% | 32.6%); 0.0% |  0.0% | 100.0%;5 KB (86.6% | 13.4%)
 
 <br>
 
-## Example
+## Examples
 
 Optimize `test.pdf` and write the result to `test_new.pdf`:
 
