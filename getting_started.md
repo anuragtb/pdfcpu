@@ -25,7 +25,7 @@ A comma separated list of expressions defining the selected pages of a PDF input
 ### mode
 
 Used by various commands.<br>
-Please refer to [validate](core/validate.md) and [extract](extract/extract.md) for more information. 
+Please refer to [validate](core/validate.md), [extract](extract/extract.md) and [encrypt](encrypt/encryptPDF.md) for more information. 
 
 ### opw
 

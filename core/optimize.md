@@ -4,7 +4,7 @@ layout: default
 
 # Optimize
 
-Optimize `inFile` by getting rid of redundant page resources like embedded fonts and images and write the result to `outFile` maxing out compression.
+Optimize `inFile` by getting rid of redundant page resources like embedded fonts and images and write the result to `outFile` maxing out PDF compression.
 
 ## Usage
 
@@ -12,15 +12,17 @@ Optimize `inFile` by getting rid of redundant page resources like embedded fonts
 pdfcpu optimize [-v(erbose)|vv] [-stats csvFile] [-upw userpw] [-opw ownerpw] inFile [outFile]
 ```
 
-| flag         | description         | required | default
-|:-------------|:--------------------|:---------|:-
-| verbose      | turn on logging     | no       | off
-| vv           | verbose logging     | no       | off
-| stats        | CSV output file     | no       | off
-| upw          | user password       | no
-| opw          | owner password      | no
+### Flags
 
-<br>
+| flag         | description       | required | default
+|:-------------|:------------------|:---------|:-
+| [verbose](../getting_started.md) | turn on logging     | no       | off
+| [vv](../getting_started.md)      | verbose logging     | no       | off
+| stats                            | CSV output file     | no       | off
+| [upw](../getting_started.md)     | user password       | no
+| [opw](../getting_started.md)     | owner password      | no
+
+### Arguments
 
 | parameter    | description         | required | default
 |:-------------|:--------------------|:---------|:-
