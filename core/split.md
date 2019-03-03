@@ -12,15 +12,16 @@ Generate a set of PDF files for `inFile` in `outDir` according to given `span` v
 pdfcpu split [-v(erbose)|vv] [-upw userpw] [-opw ownerpw] inFile outDir [span]
 ```
 
-| flag      | description         | required | default
-|:----------|:--------------------|:---------|--------
-| v(erbose) | turn on logging     | no       |
-| vv        | verbose logging     | no       |
-| upw       | user password       | no       |
-| opw       | owner password      | no       |
-| inFile    | PDF input file      | yes      |
-| outDir    | output directory    | yes      |
-| span      | split span in pages | no       | 1
+| flag                             | description         | required | default
+|:---------------------------------|:--------------------|:---------|--------
+| [verbose](../getting_started.md) | turn on logging     | no       | off
+| [vv](../getting_started.md)      | verbose logging     | no       | off
+| [upw](../getting_started.md)     | user password       | no
+| [opw](../getting_started.md)     | owner password      | no
+| opw                              | owner password      | no
+| inFile                           | PDF input file      | yes
+| outDir                           | output directory    | yes
+| span                             | split span in pages | no       | 1
 
 <br>
 

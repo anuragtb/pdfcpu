@@ -26,14 +26,16 @@ See also the examples below.
 pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] description inFile [outFile]
 ```
 
-| flag         | description          | required
-|:-------------|:---------------------|:-
-| v(erbose)    | turn on logging      | no
-| vv           | verbose logging      | no
-| pages        | page selection       | no
-| description  | configuration string | yes
-| inFile       | PDF input file       | yes
-| outFile      | PDF output file      | no
+| flag                             | description          | required | default
+|:---------------------------------|:---------------------|:---------|--------
+| [verbose](../getting_started.md) | turn on logging      | no       | off
+| [vv](../getting_started.md)      | verbose logging      | no       | off
+| pages                            | page selection       | no
+| [upw](../getting_started.md)     | user password        | no
+| [opw](../getting_started.md)     | owner password       | no
+| description                      | configuration string | yes
+| inFile                           | PDF input file       | yes
+| outFile                          | PDF output file      | no
 
 <br>
 
