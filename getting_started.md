@@ -30,9 +30,11 @@ Please refer to [validate](core/validate.md), [extract](extract/extract.md) and 
 ### opw
 
 *Owner password*<br>
-Allows full access to an encrypted document including the ability to change the document’s passwords and access permissions.
+This is the password needed to change the access permissions.
+It is commonly also referred to as the *master password* or the *permissions password*.
 
 ### upw
 
 *User password*<br>
-Opens an encrypted document and gives access corresponding to any configured user access permissions.
+This is the password needed to open a PDF for reading.
+It is also known as the *open doc password*.
