@@ -42,6 +42,10 @@ NOTE: As AES/128 is the most recent algorithm the PDF 1.7 specification defines,
 
 The length of the [cryptographic key](https://en.wikipedia.org/wiki/Key_(cryptography)) used for encryption and decryption.
 
+Possible values:
+* 40
+* 128
+
 #### perm
 
 The set of permissions that apply once a document has been opened.
@@ -106,7 +110,7 @@ writing test_enc.pdf ...
 
 <br>
 
-Encrypt `test.pdf` and write the encrypted output file to `test_enc.pdf`. Use RC4 with a 128-bit key and set all permissions to true.
+Encrypt `test.pdf` and write the encrypted output file to `test_enc.pdf`. Use RC4 with a 128-bit key and set all permissions for full access.
 Set the user password to `upw` which will be needed to open `test_enc.pdf`.
 
 ```sh
