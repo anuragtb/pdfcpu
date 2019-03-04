@@ -4,7 +4,7 @@ layout: default
 
 # Encrypt
 
-This command encrypts `inFile` using the standard security handler as defined in [PDF 32000-1:2008](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf). If provided the encrypted PDF will be written to `outFile` and `inFile` remains untouched in this case.
+This command encrypts `inFile` using the standard security handler as defined in [PDF 32000-1:2008](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf). If provided the encrypted PDF will be written to `outFile` and `inFile` remains untouched.
 
 ## Usage
 
@@ -26,9 +26,21 @@ usage: pdfcpu encrypt [-v(erbose)|vv] [-mode rc4|aes] [-key 40|128] [perm none|a
 
 #### mode
 
+The symmetric encryption algorithm to be used for encrypting and decrypting a document.<br>
+The PDF standard security handler defines two algorithms to be used: [RC4](https://en.wikipedia.org/wiki/RC4) and [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard).
+
+NOTE: RC4 is considered to be insecure!
+
+The default mode for `pdfcpu` is AES.<br>
+As of 2019 AES is still considered a secure and an effective federal US government standard.
+
 #### key
 
+The length of the [cryptographic key](https://en.wikipedia.org/wiki/Key_(cryptography)) used for encryption and decryption.
+
 #### perm
+
+The set of permissions that apply once a document has been opened. 
 
 ### Arguments
 
@@ -40,3 +52,51 @@ usage: pdfcpu encrypt [-v(erbose)|vv] [-mode rc4|aes] [-key 40|128] [perm none|a
 <br>
 
 ## Examples
+
+Encrypt `test.pdf` using the default encryption AES with a 128-bit key and the [default permissions]().
+Set the owner password to `opw`. This password also known as the *master password* or the *set permissions password* may be used to change the [permissions](). Since there is no user password set any PDF Reader may open this document.
+
+```sh
+pdfcpu encrypt -opw opw test.pdf
+writing test.pdf ...
+```
+
+<br>
+
+Encrypt `test.pdf` using the default encryption AES with a 128-bit key and the [default permissions]().
+Set the user password to `upw`. This password must be used to open the decrypted file. It is also known as the *open doc password*.
+
+```sh
+pdfcpu encrypt -upw upw test.pdf
+writing test.pdf ...
+```
+
+<br>
+
+Encrypt `test.pdf` using the default encryption AES with a 128-bit key and the [default permissions]().
+Set the owner password to `opw` and the user password to `upw`.
+
+```sh
+pdfcpu encrypt -opw opw -upw upw test.pdf
+writing test.pdf ...
+```
+
+<br>
+
+Encrypt `test.pdf` and write the encrypted output file to `test_enc.pdf`. Use AES with a 40-bit key and [default permissions]().
+Set the owner password to `opw` which will be needed to change the permissions of `test_enc.pdf`.
+
+```sh
+pdfcpu encrypt -opw opw -mode aes -key 40 test.pdf test_enc.pdf
+writing test_enc.pdf ...
+```
+
+<br>
+
+Encrypt `test.pdf` and write the encrypted output file to `test_enc.pdf`. Use RC4 with a 128-bit key and set all permissions to true.
+Set the user password to `upw` which will be needed to open `test_enc.pdf`.
+
+```sh
+pdfcpu encrypt -upw upw -mode rc4 -key 128 -perm all test.pdf test_enc.pdf
+writing test_enc.pdf ...
+```
