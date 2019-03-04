@@ -26,7 +26,7 @@ usage: pdfcpu encrypt [-v(erbose)|vv] [-mode rc4|aes] [-key 40|128] [perm none|a
 
 #### mode
 
-The symmetric encryption algorithm to be used for encrypting and decrypting a document. The PDF standard security handler defines two algorithms to be used: 
+The [symmetric encryption algorithm](https://en.wikipedia.org/wiki/Symmetric-key_algorithm) to be used for encrypting and decrypting a document. The PDF standard security handler defines two algorithms to be used: 
 
 * [RC4](https://en.wikipedia.org/wiki/RC4)
 * [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
@@ -48,14 +48,14 @@ Possible values:
 
 #### perm
 
-The set of permissions that apply once a document has been opened.
+The set of [permissions](perm_list-md) that apply once a document has been opened.
 
 Possible values:
-* `none` clears all permission bits. This is the most restrive way of presenting an open document to a user.
+* `none` clears all permission bits. This is the most restrictive way of presenting an open document to a user.
 
-* `all` sets all permission bits allowing full access to all operations that may be applied to an open encrypted document.
+* `all` sets all permission bits allowing full access to all operations that may be applied to an open document.
 
-NOTE: These quick primitives will be followed up by a finer grained control over the permission bits in a future release.
+NOTE: These quick primitives will be followed up by finer grained control over the permission bits in a future release.
 
 <br>
 
