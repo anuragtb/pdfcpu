@@ -26,13 +26,17 @@ usage: pdfcpu encrypt [-v(erbose)|vv] [-mode rc4|aes] [-key 40|128] [perm none|a
 
 #### mode
 
-The symmetric encryption algorithm to be used for encrypting and decrypting a document.<br>
-The PDF standard security handler defines two algorithms to be used: [RC4](https://en.wikipedia.org/wiki/RC4) and [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard).
+The symmetric encryption algorithm to be used for encrypting and decrypting a document. The PDF standard security handler defines two algorithms to be used: 
+
+* [RC4](https://en.wikipedia.org/wiki/RC4)
+* [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
 NOTE: RC4 is considered to be insecure!
 
 The default mode for `pdfcpu` is AES.<br>
-As of 2019 AES is still considered a secure and an effective federal US government standard.
+As of 2019 AES is still considered secure and an effective federal US government standard.
+
+NOTE: As AES/128 is the most recent algorithm the PDF 1.7 specification defines, more secure algorithms will be needed and provided in a future release.
 
 #### key
 
@@ -40,7 +44,16 @@ The length of the [cryptographic key](https://en.wikipedia.org/wiki/Key_(cryptog
 
 #### perm
 
-The set of permissions that apply once a document has been opened. 
+The set of permissions that apply once a document has been opened.
+
+Possible values:
+* `none` clears all permission bits. This is the most restrive way of presenting an open document to a user.
+
+* `all` sets all permission bits allowing full access to all operations that may be applied to an open encrypted document.
+
+NOTE: These quick primitives will be followed up by a finer grained control over the permission bits in a future release.
+
+<br>
 
 ### Arguments
 
