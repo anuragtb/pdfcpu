@@ -39,8 +39,7 @@ The following PDF features are not carried over into the merged document:
 
 ## Example
 
-pdfcpu respects the order of the provided input files and merges accordingly.<br>
-Merge three input files into `out.pdf` by concatenating `in3.pdf` to `in2.pdf` and the result to `in1.pdf`:
+pdfcpu respects the order of the provided input files and merges accordingly. Merge three input files into `out.pdf` by concatenating `in3.pdf` to `in2.pdf` and the result to `in1.pdf`:
 
 ```sh
 pdfcpu merge out.pdf in1.pdf in2.pdf in3.pdf
