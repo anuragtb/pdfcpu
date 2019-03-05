@@ -35,6 +35,17 @@ pdfcpu split [-v(erbose)|vv] [-upw userpw] [-opw ownerpw] inFile outDir [span]
 
 <br>
 
+## Restrictions
+
+The following PDF elements are not carried over into the output files:
+
+* Annotations
+* Outlines
+* Struct Trees
+* Forms
+
+<br>
+
 ## Examples
 
 Split up a PDF input file into single page PDF output files:
