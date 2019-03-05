@@ -71,7 +71,7 @@ NOTE: These quick primitives will be followed up by finer grained control over t
 ## Examples
 
 Encrypt `test.pdf` using the default encryption AES with a 128-bit key and the [default permissions]().
-Set the owner password to `opw`. This password also known as the *master password* or the *set permissions password* may be used to change the [permissions](). Since there is no user password set any PDF Reader may open this document.
+Set the owner password to `opw`. This password also known as the *master password* or the *set permissions password* may be used to change the [permissions](). Since there is no user password set any PDF Reader may open this document:
 
 ```sh
 pdfcpu encrypt -opw opw test.pdf
@@ -81,7 +81,7 @@ writing test.pdf ...
 <br>
 
 Encrypt `test.pdf` using the default encryption AES with a 128-bit key and the [default permissions]().
-Set the user password to `upw`. This password must be used to open the decrypted file. It is also known as the *open doc password*.
+Set the user password to `upw`. This password must be used to open the decrypted file. It is also known as the *open doc password*:
 
 ```sh
 pdfcpu encrypt -upw upw test.pdf
@@ -91,7 +91,7 @@ writing test.pdf ...
 <br>
 
 Encrypt `test.pdf` using the default encryption AES with a 128-bit key and the [default permissions]().
-Set the owner password to `opw` and the user password to `upw`.
+Set the owner password to `opw` and the user password to `upw`:
 
 ```sh
 pdfcpu encrypt -opw opw -upw upw test.pdf
@@ -101,7 +101,7 @@ writing test.pdf ...
 <br>
 
 Encrypt `test.pdf` and write the encrypted output file to `test_enc.pdf`. Use AES with a 40-bit key and [default permissions]().
-Set the owner password to `opw` which will be needed to change the permissions of `test_enc.pdf`.
+Set the owner password to `opw` which will be needed to change the permissions of `test_enc.pdf`:
 
 ```sh
 pdfcpu encrypt -opw opw -mode aes -key 40 test.pdf test_enc.pdf
@@ -111,7 +111,7 @@ writing test_enc.pdf ...
 <br>
 
 Encrypt `test.pdf` and write the encrypted output file to `test_enc.pdf`. Use RC4 with a 128-bit key and set all permissions for full access.
-Set the user password to `upw` which will be needed to open `test_enc.pdf`.
+Set the user password to `upw` which will be needed to open `test_enc.pdf`:
 
 ```sh
 pdfcpu encrypt -upw upw -mode rc4 -key 128 -perm all test.pdf test_enc.pdf

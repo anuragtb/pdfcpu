@@ -44,3 +44,13 @@ Merge all PDF Files in the current directory into `out.pdf`:
 ```sh
 pdfcpu merge out.pdf *.pdf
 ```
+
+<br>
+
+
+Merge three input files into `out.pdf` by concatenating `in3.pdf` to `in2.pdf` and the result to `in1.pdf`.
+pdfcpu respects the order of the provided input files and merges accordingly:
+
+```sh
+pdfcpu merge out.pdf in1.pdf in2.pdf in3.pdf
+```
