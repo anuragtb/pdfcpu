@@ -40,7 +40,7 @@ The following matrix is a result of the intrinsics of how PDF encryption works:
 |:----------------|:----------------------|:-
 | opw             | -                     | reset permissions
 | upw             | upw                   | remove open doc password & reset permissions
-| opw,upw         | opw or upw            | remove open doc password & reset permissions
+| opw and upw         | opw or upw            | remove open doc password & reset permissions
 
 <br>
 
