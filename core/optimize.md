@@ -12,6 +12,8 @@ Optimize `inFile` by getting rid of redundant page resources like embedded fonts
 pdfcpu optimize [-v(erbose)|vv] [-stats csvFile] [-upw userpw] [-opw ownerpw] inFile [outFile]
 ```
 
+<br>
+
 ### Flags
 
 | name                             | description       | required | default

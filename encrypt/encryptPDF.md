@@ -12,6 +12,8 @@ This command encrypts `inFile` using the standard security handler as defined in
 usage: pdfcpu encrypt [-v(erbose)|vv] [-mode rc4|aes] [-key 40|128] [perm none|all] [-upw userpw] [-opw ownerpw] inFile [outFile]
 ```
 
+<br>
+
 ### Flags
 
 | name                             | description     | required | values         |default
@@ -23,6 +25,17 @@ usage: pdfcpu encrypt [-v(erbose)|vv] [-mode rc4|aes] [-key 40|128] [perm none|a
 | perm                             | permissions     | no       | none, all      | none
 | [upw](../getting_started.md)     | user password   | no
 | [opw](../getting_started.md)     | owner password  | no
+
+<br>
+
+### Arguments
+
+| name         | description               | required
+|:-------------|:--------------------------|:--------
+| inFile       | PDF input file            | yes
+| outFile      | encrypted PDF output file | no
+
+<br>
 
 #### mode
 
@@ -57,15 +70,6 @@ Possible values:
 * `all` sets all permission bits allowing full access to all operations that may be applied to an open document.
 
 NOTE: These quick primitives will be followed up by finer grained control over the permission bits in a future release.
-
-<br>
-
-### Arguments
-
-| name         | description               | required
-|:-------------|:--------------------------|:--------
-| inFile       | PDF input file            | yes
-| outFile      | encrypted PDF output file | no
 
 <br>
 

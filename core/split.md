@@ -12,6 +12,8 @@ Generate a set of PDF files for `inFile` in `outDir` according to given `span` v
 pdfcpu split [-v(erbose)|vv] [-upw userpw] [-opw ownerpw] inFile outDir [span]
 ```
 
+<br>
+
 ### Flags
 
 | flag                             | description         | required | default

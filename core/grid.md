@@ -15,6 +15,8 @@ layout: default
 pdfcpu grid [-v(erbose)|vv] [-pages pageSelection] [description] outFile m n inFile|imageFiles...
 ```
 
+<br>
+
 ### Flags
 
 | flag         | description          | required

@@ -12,6 +12,8 @@ Merge 2 or more PDF files into `outFile`.
 pdfcpu merge [-v(erbose)|vv] outFile inFile...
 ```
 
+<br>
+
 ### Flags
 
 | name         | description       | required | default

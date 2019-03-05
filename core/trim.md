@@ -12,6 +12,8 @@ Generate a trimmed version of `inFile` for selected pages.
 pdfcpu trim [-v(erbose)|vv] -pages pageSelection [-upw userpw] [-opw ownerpw] inFile [outFile]
 ```
 
+<br>
+
 ### Flags
 
 | flag                             | description     | required | default

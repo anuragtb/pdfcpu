@@ -12,6 +12,8 @@ Rotate selected pages of `inFile` clockwise by a multiple of 90 degrees.
 pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] inFile rotation
 ```
 
+<br>
+
 ### Flags
 
 | flag                             | description     | required | values

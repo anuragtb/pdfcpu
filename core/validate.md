@@ -12,6 +12,8 @@ This command checks `inFile` for compliance with the specification [PDF 32000-1:
 pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-opw ownerpw] inFile
 ```
 
+<br>
+
 ### Flags
 
 | name                             | description     | required | values         |default

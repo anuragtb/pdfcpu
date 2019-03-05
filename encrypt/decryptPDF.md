@@ -12,6 +12,8 @@ This command decrypts `inFile` and removes password protection. If provided the 
 usage: pdfcpu decrypt [-v(erbose)|vv] [-upw userpw] [-opw ownerpw] inFile [outFile]
 ```
 
+<br>
+
 ### Flags
 
 | name                             | description     | required | values
