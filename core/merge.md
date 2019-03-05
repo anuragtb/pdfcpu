@@ -19,6 +19,8 @@ pdfcpu merge [-v(erbose)|vv] outFile inFile...
 | [verbose](../getting_started.md) | turn on logging     | no       | off
 | [vv](../getting_started.md)      | verbose logging     | no       | off
 
+<br>
+
 ### Arguments
 
 | name         | description         | required

@@ -26,6 +26,8 @@ See also the examples below.
 pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] description inFile [outFile]
 ```
 
+### Flags
+
 | flag                             | description          | required | default
 |:---------------------------------|:---------------------|:---------|--------
 | [verbose](../getting_started.md) | turn on logging      | no       | off

@@ -23,6 +23,8 @@ For a single image file create a single page PDF file and fill the grid with cop
 pdfcpu nup|n-up [-v(erbose)|vv] [-pages pageSelection] [description] outFile n inFile|imageFile...
 ```
 
+### Flags
+
 | flag         | description          | required
 |:-------------|:---------------------|---------
 | v(erbose)    | turn on logging      | no

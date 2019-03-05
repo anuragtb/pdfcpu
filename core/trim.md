@@ -12,6 +12,8 @@ Generate a trimmed version of `inFile` for selected pages.
 pdfcpu trim [-v(erbose)|vv] -pages pageSelection [-upw userpw] [-opw ownerpw] inFile [outFile]
 ```
 
+### Flags
+
 | flag                             | description     | required | default
 |:---------------------------------|:----------------|:---------|--------
 | [verbose](../getting_started.md) | turn on logging | no       | off
@@ -20,6 +22,7 @@ pdfcpu trim [-v(erbose)|vv] -pages pageSelection [-upw userpw] [-opw ownerpw] in
 | [upw](../getting_started.md)     | user password   | no
 | [opw](../getting_started.md)     | owner password  | no
 
+<br>
 
 ### Arguments
 

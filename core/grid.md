@@ -15,17 +15,13 @@ layout: default
 pdfcpu grid [-v(erbose)|vv] [-pages pageSelection] [description] outFile m n inFile|imageFiles...
 ```
 
+### Flags
+
 | flag         | description          | required
 |:-------------|:---------------------|:-
 | v(erbose)    | turn on logging      | no
 | vv           | verbose logging      | no
 | pages        | page selection       | no
-| description  | configuration string | no
-| outFile      | PDF output file      | yes
-| m            | horizontal span      | yes
-| n            | vertical span        | yes
-| inFile       | PDF input file       | inFile or imageFile(s)
-| imageFile... | one or more images   | inFile or imageFile(s)
 
 <br>
 

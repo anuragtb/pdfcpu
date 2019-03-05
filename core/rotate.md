@@ -12,6 +12,8 @@ Rotate selected pages of `inFile` clockwise by a multiple of 90 degrees.
 pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] inFile rotation
 ```
 
+### Flags
+
 | flag                             | description     | required | values
 |:---------------------------------|:----------------|:---------|:------
 | [verbose](../getting_started.md) | turn on logging | no       | off
@@ -20,6 +22,7 @@ pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw
 | [upw](../getting_started.md)     | user password   | no
 | [opw](../getting_started.md)     | owner password  | no
 
+<br>
 
 ### Arguments
 
