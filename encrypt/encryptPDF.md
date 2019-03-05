@@ -48,7 +48,7 @@ Possible values:
 
 #### perm
 
-The set of [permissions](perm_list-md) that apply once a document has been opened.
+The set of [permissions](perm_list.md) that apply once a document has been opened.
 
 Possible values:
 * `none` clears all permission bits. This is the most restrictive way of presenting an open document to a user.
