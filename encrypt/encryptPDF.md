@@ -62,10 +62,10 @@ NOTE: These quick primitives will be followed up by finer grained control over t
 
 ### Arguments
 
-| name         | description         | required
-|:-------------|:--------------------|:--------
-| inFile       | PDF input file      | yes
-| outFile      | PDF output file     | no
+| name         | description               | required
+|:-------------|:--------------------------|:--------
+| inFile       | PDF input file            | yes
+| outFile      | encrypted PDF output file | no
 
 <br>
 
