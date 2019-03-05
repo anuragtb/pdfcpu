@@ -35,6 +35,17 @@ pdfcpu trim [-v(erbose)|vv] -pages pageSelection [-upw userpw] [-opw ownerpw] in
 
 <br>
 
+## Restrictions
+
+The following PDF elements are not carried over into the trimmed document:
+
+* Annotations
+* Outlines
+* Struct Trees
+* Forms
+
+<br>
+
 ## Examples
 
 Get rid of unwanted blank pages:

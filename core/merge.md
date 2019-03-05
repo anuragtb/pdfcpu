@@ -34,12 +34,14 @@ pdfcpu merge [-v(erbose)|vv] outFile inFile...
 
 ## Restrictions
 
-The following PDF features are not carried over into the merged document:
+The following PDF elements are not carried over into the merged document:
 
 * Annotations
+* Outlines
 * Struct Trees
-* Forms ?
-* ...
+* Forms
+
+<br>
 
 ## Example
 
