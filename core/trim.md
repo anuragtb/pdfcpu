@@ -16,10 +16,10 @@ pdfcpu trim [-v(erbose)|vv] -pages pageSelection [-upw userpw] [-opw ownerpw] in
 
 ### Flags
 
-| flag                             | description     | required | default
-|:---------------------------------|:----------------|:---------|--------
-| [verbose](../getting_started.md) | turn on logging | no       | off
-| [vv](../getting_started.md)      | verbose logging | no       | off
+| flag                             | description     | required
+|:---------------------------------|:----------------|:--------
+| [verbose](../getting_started.md) | turn on logging | no
+| [vv](../getting_started.md)      | verbose logging | no
 | pages                            | page selection  | yes
 | [upw](../getting_started.md)     | user password   | no
 | [opw](../getting_started.md)     | owner password  | no

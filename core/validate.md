@@ -16,11 +16,11 @@ pdfcpu validate [-v(erbose)|vv] [-mode strict|relaxed] [-upw userpw] [-opw owner
 
 ### Flags
 
-| name                             | description     | required | values         |default
-|:---------------------------------|:----------------|:---------|:---------------|:------
-| [verbose](../getting_started.md) | turn on logging | no       | off
-| [vv](../getting_started.md)      | verbose logging | no       | off
-| mode                             | validation mode | no       |strict, relaxed | relaxed
+| name                             | description     | required | values          |default
+|:---------------------------------|:----------------|:---------|:----------------|:------
+| [verbose](../getting_started.md) | turn on logging | no       |
+| [vv](../getting_started.md)      | verbose logging | no       |
+| mode                             | validation mode | no       | strict, relaxed | relaxed
 | [upw](../getting_started.md)     | user password   | no
 | [opw](../getting_started.md)     | owner password  | no
 

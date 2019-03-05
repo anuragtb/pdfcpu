@@ -14,10 +14,7 @@ There are 3 types:
 2. Image based
 3. PDF based
 
-Conceptually a watermark is a stamp with proper `opacity` applied.
-The command `watermark` is therefore deprecated.<br>
-Instead use `stamp` with a proper `o`pacity value in the command `description`.<br>
-See also the examples below.
+From an implementation point of view a watermark is nothing else than a transparent stamp, a stamp with some `opacity` applied. The command `watermark` is therefore considered deprecated. Instead use `stamp` with a proper `o`pacity value in the command `description`. See the examples below.
 
 
 ## Usage
@@ -30,10 +27,10 @@ pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw]
 
 ### Flags
 
-| flag                             | description          | required | default
-|:---------------------------------|:---------------------|:---------|--------
-| [verbose](../getting_started.md) | turn on logging      | no       | off
-| [vv](../getting_started.md)      | verbose logging      | no       | off
+| flag                             | description          | required
+|:---------------------------------|:---------------------|:--------
+| [verbose](../getting_started.md) | turn on logging      | no
+| [vv](../getting_started.md)      | verbose logging      | no
 | pages                            | page selection       | no
 | [upw](../getting_started.md)     | user password        | no
 | [opw](../getting_started.md)     | owner password       | no

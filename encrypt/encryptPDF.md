@@ -18,8 +18,8 @@ usage: pdfcpu encrypt [-v(erbose)|vv] [-mode rc4|aes] [-key 40|128] [perm none|a
 
 | name                             | description     | required | values         |default
 |:---------------------------------|:----------------|:---------|:---------------|:------
-| [verbose](../getting_started.md) | turn on logging | no       | off
-| [vv](../getting_started.md)      | verbose logging | no       | off
+| [verbose](../getting_started.md) | turn on logging | no       |
+| [vv](../getting_started.md)      | verbose logging | no       |
 | mode                             | encryption      | no       | rc4, aes       | aes
 | key                              | key length      | no       | 40,128         | 128
 | perm                             | permissions     | no       | none, all      | none
