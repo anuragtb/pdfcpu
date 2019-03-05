@@ -43,6 +43,7 @@ NOTE: As AES/128 is the most recent algorithm the PDF 1.7 specification defines,
 The length of the [cryptographic key](https://en.wikipedia.org/wiki/Key_(cryptography)) used for encryption and decryption.
 
 Possible values:
+
 * 40
 * 128
 
