@@ -28,6 +28,13 @@ pdfcpu nup|n-up [-v(erbose)|vv] [-pages pageSelection] [description] outFile n i
 | v(erbose)    | turn on logging      | no
 | vv           | verbose logging      | no
 | pages        | page selection       | no
+
+<br>
+
+### Arguments
+
+| name         | description          | required | default
+|:-------------|:---------------------|:---------|:-
 | description  | configuration string | no
 | outFile      | PDF output file      | yes
 | n            | the N-up value       | yes
@@ -89,7 +96,6 @@ This is usually associated with the writing direction used in the document to be
 
 * Only one of dimensions or format is allowed.
 
-<br>
 
 ## Examples
 

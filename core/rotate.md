@@ -19,8 +19,16 @@ pdfcpu rotate [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw
 | pages                            | page selection  | no       | all pages
 | [upw](../getting_started.md)     | user password   | no
 | [opw](../getting_started.md)     | owner password  | no
-| inFile                           | PDF input file  | yes
-| rotation                         | rotation angle  | yes      | -270, -180, -90, 90, 180, 270
+
+
+### Arguments
+
+| name         | description    | required | values
+|:-------------|:---------------|:---------|:-
+| inFile       | PDF input file | yes
+| rotation     | rotation angle | yes      | -270, -180, -90, 90, 180, 270
+
+<br>
 
 ## Examples
 

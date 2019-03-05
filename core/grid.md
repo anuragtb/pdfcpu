@@ -29,6 +29,19 @@ pdfcpu grid [-v(erbose)|vv] [-pages pageSelection] [description] outFile m n inF
 
 <br>
 
+### Arguments
+
+| name         | description          | required
+|:-------------|:---------------------|:--------
+| description  | configuration string | no
+| outFile      | PDF output file      | yes
+| m            | horizontal span      | yes
+| n            | vertical span        | yes
+| inFile       | PDF input file       | inFile or imageFile(s)
+| imageFile... | one or more images   | inFile or imageFile(s)
+
+<br>
+
 ### Description
 
 A configuration string to specify the details of the grid layout.

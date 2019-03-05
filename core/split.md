@@ -18,9 +18,14 @@ pdfcpu split [-v(erbose)|vv] [-upw userpw] [-opw ownerpw] inFile outDir [span]
 | [vv](../getting_started.md)      | verbose logging     | no       | off
 | [upw](../getting_started.md)     | user password       | no
 | [opw](../getting_started.md)     | owner password      | no
-| inFile                           | PDF input file      | yes
-| outDir                           | output directory    | yes
-| span                             | split span in pages | no       | 1
+
+### Arguments
+
+| name         | description         | required | default
+|:-------------|:--------------------|:---------|:-
+| inFile       | PDF input file      | yes
+| outDir       | output directory    | yes
+| span         | split span in pages | no       | 1
 
 <br>
 

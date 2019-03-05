@@ -23,7 +23,7 @@ See also the examples below.
 ## Usage
 
 ```
-pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] description inFile [outFile]
+pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] description inFile [outFile]
 ```
 
 | flag                             | description          | required | default
@@ -33,9 +33,16 @@ pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] description inFile [outFile]
 | pages                            | page selection       | no
 | [upw](../getting_started.md)     | user password        | no
 | [opw](../getting_started.md)     | owner password       | no
-| description                      | configuration string | yes
-| inFile                           | PDF input file       | yes
-| outFile                          | PDF output file      | no
+
+<br>
+
+### Arguments
+
+| name         | description          | required | default
+|:-------------|:---------------------|:---------|:-
+| description  | configuration string | yes
+| inFile       | PDF input file       | yes
+| outFile      | PDF output file      | no       | inFile_new.pdf
 
 <br>
 

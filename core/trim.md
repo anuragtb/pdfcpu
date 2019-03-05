@@ -19,8 +19,14 @@ pdfcpu trim [-v(erbose)|vv] -pages pageSelection [-upw userpw] [-opw ownerpw] in
 | pages                            | page selection  | yes
 | [upw](../getting_started.md)     | user password   | no
 | [opw](../getting_started.md)     | owner password  | no
-| inFile                           | PDF input file  | yes
-| outFile                          | PDF output file | no        | inFile_new.pdf
+
+
+### Arguments
+
+| name         | description         | required | default
+|:-------------|:--------------------|:---------|:-
+| inFile       | PDF input file      | yes
+| outFile      | PDF output file     | no       | inFile_new.pdf
 
 <br>
 
