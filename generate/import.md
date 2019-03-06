@@ -21,14 +21,24 @@ Convert one or more image files into a PDF file.
 ```
 pdfcpu import [-v(erbose)|vv] [description] outFile imageFile...
 ```
+<br>
 
-| flag         | description
-|:-------------|:---------------
-| v(erbose)    | turn on logging
-| vv           | verbose logging
-| description  | configuration string
-| outFile      | output PDF file
-| imageFile... | one or more input image files
+### Flags
+
+| flag                             | description
+|:---------------------------------|:---------------
+| [verbose](../getting_started.md) | turn on logging   | no
+| [vv](../getting_started.md)      | verbose logging   | no
+
+<br>
+
+### Arguments
+
+| name         | description                   | required
+|:-------------|:------------------------------|:--------
+| description  | configuration string          | no
+| outFile      | PDF output file               | yes
+| imageFile... | one or more input image files | yes
 
 <br>
 

@@ -48,14 +48,15 @@ The following PDF elements are not carried over into the output files:
 
 ## Examples
 
-Split up a PDF input file into single page PDF output files:
+Split up a PDF input file into single page PDF files in `out`:
 ```sh
 pdfcpu split test.pdf out
 ``` 
 
 <br>
-Split up a PDF input file into individual PDF output files for every sheet of paper. Every PDF output file spans 2 pages of the original:
+
+Split up a PDF input file into individual PDF files for every sheet of paper. Every PDF output file in `out` spans 2 pages of the original:
 
 ```sh
-pdfcpu split test.pdf . 2
+pdfcpu split test.pdf out 2
 ```
