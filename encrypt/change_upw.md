@@ -6,7 +6,7 @@ layout: default
 
 This command changes the password which is also known as the *open doc password*.
 
-# Usage
+## Usage
 
 ```
 usage: pdfcpu changeupw [-v(erbose)|vv] [-opw ownerpw] inFile upwOld upwNew

@@ -40,7 +40,7 @@ pdfcpu perm add [-v(erbose)|vv] [-perm none|all] [-upw userpw] -opw ownerpw inFi
 
 ## Examples
 
-Basically you have to provide any non empty password in order to change permissions. 
+You have to provide any non empty password in order to change permissions.
 
 For a document encrypted with just the *owner password* you have to provide `opw` to change the permissions:
 
