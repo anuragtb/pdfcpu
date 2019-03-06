@@ -6,7 +6,8 @@ layout: default
 
 The PDF specification defines a set of permissions that may be set for encrypted documents.
 Permissions go into effect anytime an encrypted document is opened with the *user password*.
-Providing the *owner password* which is also known as the *set permissions password* or *master password* will give full access to the document.<br>
+Providing the *owner password* which is also known as the *set permissions password* or *master password* will give full access to the document.
+
 `pdfcpu` provides minimal support for setting permissions. You can set either `all` or `none` permissions.
 
 ## Usage
@@ -24,8 +25,8 @@ pdfcpu perm add [-v(erbose)|vv] [-perm none|all] [-upw userpw] -opw ownerpw inFi
 | [verbose](../getting_started.md) | turn on logging | no
 | [vv](../getting_started.md)      | verbose logging | no
 | perm                             | permissions     | no       | none, all | none
-| [upw](../getting_started.md)     | user password   | no
-| [opw](../getting_started.md)     | owner password  | no
+| [upw](../getting_started.md)     | user password   | if set
+| [opw](../getting_started.md)     | owner password  | if set
 
 <br>
 
@@ -38,6 +39,8 @@ pdfcpu perm add [-v(erbose)|vv] [-perm none|all] [-upw userpw] -opw ownerpw inFi
 <br>
 
 ## Examples
+
+Basically you have to provide any non empty password in order to change permissions. 
 
 For a document encrypted with just the *owner password* you have to provide `opw` to change the permissions:
 
