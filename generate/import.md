@@ -110,21 +110,21 @@ pdfcpu import album.pdf pics/*
 ```
 <br>
 
-Generate a PDF gallery of image files each of them centered on the page with a default relative scaling of 0.5 by using a description string:
+Generate a PDF album of image files each of them centered on a page with a default relative scaling of 0.5 by using a description string:
 
 ```sh
 pdfcpu import 'p:c' album.pdf pics/*
 ```
 <br>
 
-The following command also generates a PDF gallery but additionally configures paper size *Letter* and positioning anchored to the bottom left corner with a horizontal offset of 10 points and a vertical offset of 20 points in PDF user space with a scaling of 0.3 relative to page dimensions:
+The following command also generates a PDF album but additionally configures paper size *Letter* and positioning anchored to the bottom left corner with a horizontal offset of 10 points and a vertical offset of 20 points in PDF user space with a scaling of 0.3 relative to page dimensions:
 
 ```sh
 pdfcpu import 'f:Letter, p:bl, o:10 20, s:0.3' album.pdf *.jpg *.png
 ```
 <br>
 
-If a gallery created by *Import* ends up having some pages with images not in upright position the [Rotate](../core/rotate.md) command comes to the rescue. Let's say we just have created a gallery and the images on page 3 and 4 need to be rotated counter clockwise by 90 degrees. We can fix this situation with:
+If an album created by *Import* ends up having some pages with images not in upright position the [Rotate](../core/rotate.md) command comes to the rescue. Let's say we just have created an album and the images on page 3 and 4 need to be rotated counter clockwise by 90 degrees. We can fix this situation with:
 
 ```sh
 pdfcpu rotate -pages 3-4 album.pdf -90
