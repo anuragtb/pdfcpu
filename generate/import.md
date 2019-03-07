@@ -10,11 +10,11 @@ Convert one or more image files into a PDF file.
 
 * If you pass in a single image file name a single page PDF will be created.
 
-* If you pass in a list of image files a picture gallery gets created which is the result of the concatenation of pages containing a single image each.
+* If you pass in a list of image files a photo album gets created as a result of the concatenation of pages containing a single image each.
 
 * By supplying a configuration string you can specify layout details like position, dimensions, scaling and the paper size to be used.
 
-* The command will create the output file if it does not exist otherwise it will append to it. This feature comes in handy when you have a cover page and want to append a gallery to it.
+* The command will create the output file if it does not exist otherwise it will append to it. This feature comes in handy when you have a cover page and want to append a photo album to it.
 
 ## Usage
 
