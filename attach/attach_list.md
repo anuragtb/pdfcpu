@@ -35,7 +35,7 @@ pdfcpu attach list [-v(erbose)|vv] [-upw userpw] [-opw ownerpw] inFile
 
 ## Examples
 
-You may attach any file to a PDF document:
+ List all attachments embedded into `container.pdf`. You may attach any file to a PDF document:
 
 ```sh
 pdfcpu attach list container.pdf
