@@ -4,7 +4,7 @@ layout: default
 
 # Split
 
-Generate a set of PDF files for `inFile` in `outDir` according to given `span` value. Also check out the [extract pages](../extract(extract_pages.md) command.
+Generate a set of PDF files for `inFile` in `outDir` according to given `span` value. Also check out the [extract pages](../extract/extract_pages.md) command which gives you similar functionality.
 
 ## Usage
 
