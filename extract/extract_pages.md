@@ -4,7 +4,7 @@ layout: default
 
 # Extract Pages
 
-This command is similar to `split` with a default `span` of 1.
+This command is similar to [split](../core/split.md) with a default `span` of 1.
 
 ## Examples
 
