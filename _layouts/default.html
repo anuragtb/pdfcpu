@@ -41,7 +41,7 @@
 
         {% if page.dir == '/getting_started/' %}
           {% include nav_getting_started.html navclass='nav-top' %}
-        {% if page.dir == '/core/' %}
+        {% elsif page.dir == '/core/' %}
           {% include nav_core.html navclass='nav-top' %}
         {% elsif page.dir == '/generate/' %}
           {% include nav_generate.html navclass='nav-top' %}
