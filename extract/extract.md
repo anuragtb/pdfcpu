@@ -4,7 +4,7 @@ layout: default
 
 # Extract
 
-This command lets you extract the following from a PDF input file:
+This command lets you extract the following from a PDF file:
 
 * [images](extract_images.md)
 * [fonts](extract_fonts.md)
