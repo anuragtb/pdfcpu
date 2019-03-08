@@ -18,7 +18,7 @@ Enables verbose logging on the standard output.
 
 ## pages, p
 
-A comma separated list of expressions defining the selected pages of a PDF input file.
+A comma separated list of expressions defining the [selected pages](page_selection.md) of a PDF input file.
 
 ## mode, m
 
