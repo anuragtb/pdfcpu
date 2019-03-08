@@ -2,4 +2,4 @@
 layout: default
 ---
 
-# The Core Commands
+# Core Commands
