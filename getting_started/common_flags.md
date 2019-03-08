@@ -14,7 +14,8 @@ Enables logging on the standard output.
 ## vv
 
 *Very verbose*.<br>
-Enables verbose logging on the standard output.
+Enables verbose logging on the standard output.<br>
+Please use this flag to [report a bug](https://github.com/hhrutter/pdfcpu/issues).
 
 ## pages, p
 
