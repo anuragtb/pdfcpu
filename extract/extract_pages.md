@@ -4,10 +4,12 @@ layout: default
 
 # Extract Pages
 
+This command is similar to `split` with a default `span` of 1.
+
 ## Examples
 
 Extract all pages from `book.pdf` into single page PDFs in the current directory:
-```
+```sh
 pdfcpu extract -mode page book.pdf .
 extracting pages from book.pdf into . ...
 writing ./book_1.pdf ...

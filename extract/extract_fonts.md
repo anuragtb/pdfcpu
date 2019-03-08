@@ -8,7 +8,7 @@ layout: default
 
 Extract all fonts from `book.pdf` into `out`:
 
-```
+```sh
 pdfcpu extract -mode font book.pdf out
 extracting fonts from book.pdf into out ...
 
@@ -24,7 +24,7 @@ ls out
 
 Extract all fonts of pages 5-10  from `book.pdf` into `out`: 
 
-```
+```sh
 pdfcpu extract -mode font -pages 5-10 book.pdf out
 extracting fonts from book.pdf into out ...
 

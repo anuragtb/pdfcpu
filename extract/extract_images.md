@@ -8,7 +8,7 @@ layout: default
 
 Extract all images of `book.pdf` into the current directory:
 
-```
+```sh
 pdfcpu extract -mode image book.pdf .
 extracting images from book.pdf into . ...
 
@@ -28,7 +28,7 @@ ls
 
 Extract all images of the first 5 pages of `folder.pdf` into `out`:
 
-```
+```sh
 pdfcpu extract -mode image -pages -5 folder.pdf out
 pageSelection: -5
 extracting images from folder.pdf into out ...
