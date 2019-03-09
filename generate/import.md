@@ -102,7 +102,7 @@ pdfcpu import 'f:A5, p:c' photo.pdf photo.jpg
 ```
 
 <p align="center">
-  <img style="border-color:gray " border="1" src="resources/a5pc.png" height="300">
+  <img style="border-color:silver" border="1" src="resources/a5pc.png" height="300">
 </p>
 
 <br>
@@ -114,7 +114,7 @@ pdfcpu import 'f:A5L, p:c' photo.pdf photo.jpg
 ```
 
 <p align="center">
-  <img style="border-color:black" border="1" src="resources/a5lc.png" width="300">
+  <img style="border-color:silver" border="1" src="resources/a5lc.png" width="300">
 </p>
 
 <br>
@@ -126,7 +126,7 @@ pdfcpu import 'f:A5L, p:bl' photo.pdf photo.jpg
 ```
 
 <p align="center">
-  <img style="border-color:black" border="1" src="resources/a5lbl.png" width="300">
+  <img style="border-color:silver" border="1" src="resources/a5lbl.png" width="300">
 </p>
 
 <br>
@@ -138,7 +138,7 @@ pdfcpu import 'f:A5L, p:r, o:-20 0' photo.pdf photo.jpg
 ```
 
 <p align="center">
-  <img style="border-color:black" border="1" src="resources/a5lro.png" width="300">
+  <img style="border-color:silver" border="1" src="resources/a5lro.png" width="300">
 </p>
 
 <br>
@@ -150,7 +150,7 @@ pdfcpu import 'd:500 500, p:tl, s:0.3 rel' photo.pdf photo.jpg
 ```
 
 <p align="center">
-  <img style="border-color:black" border="1" src="resources/dtls03.png" width="300">
+  <img style="border-color:silver" border="1" src="resources/dtls03.png" width="300">
 </p>
 
 <br>
@@ -162,7 +162,7 @@ pdfcpu import 'd:500 500, p:tl, s:1' photo.pdf photo.jpg
 ```
 
 <p align="center">
-  <img style="border-color:black" border="1" src="resources/dtls1.png" width="300">
+  <img style="border-color:silver" border="1" src="resources/dtls1.png" width="300">
 </p>
 
 <br>
