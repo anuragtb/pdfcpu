@@ -109,7 +109,7 @@ pdfcpu nup out.pdf 4 in.pdf
 ```
 
 <p align="center">
-  <img border="2" src="resources/nup4pdf.png" height="300">
+  <img style="border-color:silver" border="1" src="resources/nup4pdf.png" height="300">
 </p>
 
 <br>
@@ -120,7 +120,7 @@ pdfcpu nup 'f:A4' out.pdf 9 in.pdf
 ```
 
 <p align="center">
-  <img border="2" src="resources/nup9pdf.png" height="300">
+  <img style="border-color:silver" border="1" src="resources/nup9pdf.png" height="300">
 </p>
 
 <br>
@@ -136,7 +136,7 @@ pdfcpu nup 'f:A4L' out.pdf 4 *.jpg *.png *.tif
 
 
 <p align="center">
-  <img border="2" src="resources/nup4img.png">
+  <img style="border-color:silver" border="1" src="resources/nup4img.png">
 </p>
 
 <br>
@@ -151,5 +151,5 @@ pdfcpu nup 'f:Ledger, b:off, m:0' out.pdf 16 logo.jpg
 
 
 <p align="center">
-  <img border="2" src="resources/nup16img.png">
+  <img style="border-color:silver" border="1" src="resources/nup16img.png">
 </p>

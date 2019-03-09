@@ -95,7 +95,7 @@ pdfcpu grid 'b:off' out.pdf 1 4 in.pdf
 
 
 <p align="center">
-  <img border="1" src="resources/gridpdf.png" height="300">
+  <img style="border-color:silver" border="1" src="resources/gridpdf.png" height="300">
 </p>
 
 <br>
@@ -108,7 +108,7 @@ pdfcpu grid 'd:500 500, m:20, b:off' out.pdf 5 2 *.jpg
 
 
 <p align="center">
-  <img border="1" src="resources/gridimg.png">
+  <img style="border-color:silver" border="1" src="resources/gridimg.png">
 </p>
 <br>
 
