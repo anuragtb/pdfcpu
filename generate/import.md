@@ -90,7 +90,7 @@ pdfcpu import photo.pdf photo.png
 ```
 
 <p align="center">
-  <img style="border-color:black" border="1" src="resources/full.png" width="300">
+  <img src="resources/full.png" width="300">
 </p>
 
 <br>
@@ -102,7 +102,7 @@ pdfcpu import 'f:A5, p:c' photo.pdf photo.jpg
 ```
 
 <p align="center">
-  <img style="border-color:black" border="1" src="resources/a5pc.png" height="300">
+  <img style="border-color:gray " border="1" src="resources/a5pc.png" height="300">
 </p>
 
 <br>
@@ -147,9 +147,6 @@ Import `photo.jpg` into a 500 x 500 single page PDF anchoring the image to the t
 
 ```sh
 pdfcpu import 'd:500 500, p:tl, s:0.3 rel' photo.pdf photo.jpg
-importing images into photo.pdf: [photo.jpg]
-Import config:  500x500 points, pos=top left, dx=0, dy=0, scaling: 0.3 relative
-writing photo.pdf ...
 ```
 
 <p align="center">
@@ -162,9 +159,6 @@ Import `photo.jpg` into a 500 x 500 single page PDF anchoring the image to the t
 
 ```sh
 pdfcpu import 'd:500 500, p:tl, s:1' photo.pdf photo.jpg
-importing images into photo.pdf: [photo.jpg]
-Import config:  500x500 points, pos=top left, dx=0, dy=0, scaling: 1 relative
-writing photo.pdf ...
 ```
 
 <p align="center">
