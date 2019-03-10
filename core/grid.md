@@ -23,7 +23,7 @@ pdfcpu grid [-v(erbose)|vv] [-pages pageSelection] [description] outFile m n inF
 |:---------------------------------|:----------------|:--------
 | [verbose](../getting_started.md) | turn on logging | no
 | [vv](../getting_started.md)      | verbose logging | no
-| pages                            | page selection  | no
+| [pages](../getting_started/page_selection) | page selection  | no
 
 <br>
 

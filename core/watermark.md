@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Stamp
+# Watermark
 
 NOTE
 
@@ -14,12 +14,13 @@ In the Adobe world a watermark is text or an image that appears either in front 
 
 where *content* may be text, an image or a PDF page.
 
+
 ---
 <br>
 
-Add stamps to selected pages of `inFile`.<br>
-A stamp is centered on the page and you can configure various aspects like rotation, scaling, opacity
-and fontname, fontsize, fill color and render mode for text based stamps.
+Add watermarks to selected pages of `inFile`.<br>
+A watermark is centered on the page and you can configure various aspects like rotation, scaling, opacity
+and fontname, fontsize, fill color and render mode for text based watermarks.
 
 ## Usage
 
@@ -53,7 +54,7 @@ pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw]
 
 ### Description
 
-A configuration string to specify the stamp parameters.
+A configuration string to specify watermark parameters.
 
 The first entry of the description configures the type. It is one of the following:
 
@@ -93,7 +94,7 @@ The following description parameters are for text based stamps/watermarks only:
 
 * You only have to specify parameters diverging from the default.
 
-* The standard stamp configuration is the location at the center of the page with a positive rotation along the diagonale from the lower left to the upper right page corner.
+* The standard watermark configuration is the location at the center of the page with a positive rotation along the diagonale from the lower left to the upper right page corner.
 
 <br>
 
