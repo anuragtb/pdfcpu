@@ -18,14 +18,12 @@ where *content* may be text, an image or a PDF page.
 ---
 <br>
 
-Add watermarks to selected pages of `inFile`.<br>
-A watermark is centered on the page and you can configure various aspects like rotation, scaling, opacity
-and fontname, fontsize, fill color and render mode for text based watermarks.
+Add watermarks to selected pages of `inFile`. A watermark is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based watermarks you can also configure font name, font size, fill color and render mode.
 
 ## Usage
 
 ```
-pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] description inFile [outFile]
+pdfcpu watermark [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] description inFile [outFile]
 ```
 
 <br>
@@ -78,9 +76,10 @@ The first entry of the description configures the type. It is one of the followi
 
 Only one of rotation and diagonal is allowed.
 
-The following description parameters are for text based stamps/watermarks only:
+The following description parameters are for text based watermarks only:
 
-* fontname
+* font name
+* font size
 * color
 * render mode
 
@@ -92,10 +91,21 @@ The following description parameters are for text based stamps/watermarks only:
 'f:Helvetica, p:24, s:0.5 rel, c:0.5 0.5 0.5, r:0, d:1, o:1, m:0'
 ```
 
-* You only have to specify parameters diverging from the default.
+The default watermark configuration is:
 
-* The standard watermark configuration is the location at the center of the page with a positive rotation along the diagonale from the lower left to the upper right page corner.
+* fixed center page position (free positioning will be part of a future release)
+* scale factor `0.5 rel`ative to page dimensions
+* positive rotation along the diagonale from the lower left to the upper right page corner (`d:1`).
+* fully opaque watermark by defining `o`pacity `1`
 
+In addition for text based watermarks:
+
+* font name `Helvetica`
+* font size `24` points
+* fill color gray (`0.5 0.5 0.5`)
+* render mode fill (`m:0`)
+
+You only have to specify parameters that differ from the default.
 <br>
 
 ## Examples
@@ -104,37 +114,19 @@ Create a text based watermark:
 
 <br>
 
-Create a text based stamp:
-
-<br>
-
 Create an image based watermark:
-
-<br>
-
-Create an image based stamp:
-<p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmImageSample.png" height="300">
-</p>
 
 <br>
 
 Create a PDF based watermark:
 
-<br>
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmImageSample.png" height="300">
+</p>
 
-Create a PDF based stamp:
 <p align="center">
   <img style="border-color:silver" border="1" src="resources/wmPDFSample.jpg" height="300">
 </p>
-
-
-
-
-e.g. 'Draft'                                                  'logo.png'
-     'Draft, d:2'                                             'logo.tif, o:0.5, s:0.5 abs, r:0'
-     'Intentionally left blank, s:.75 abs, p:48'              'some.pdf, r:45'
-     'Confidental, f:Courier, s:0.75, c: 0.5 0.0 0.0, r:20'   'some.pdf:3, r:-90, s:0.75'
 
 
 <p align="center">
@@ -145,5 +137,7 @@ e.g. 'Draft'                                                  'logo.png'
   <img style="border-color:silver" border="1" src="resources/wmText2Sample.png" height="300">
 </p>
 
-
-
+e.g. 'Draft'                                                  'logo.png'
+     'Draft, d:2'                                             'logo.tif, o:0.5, s:0.5 abs, r:0'
+     'Intentionally left blank, s:.75 abs, p:48'              'some.pdf, r:45'
+     'Confidental, f:Courier, s:0.75, c: 0.5 0.0 0.0, r:20'   'some.pdf:3, r:-90, s:0.75'
