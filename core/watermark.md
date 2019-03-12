@@ -152,7 +152,7 @@ pdfcpu watermark 'This is a watermark, s:.9, d:2, c:.6 .2 .9' test.pdf out.pdf
 
 <br>
 
-Create a watermark with a rotation of 0 degrees using scale factor 0.9 and a render mode `stroke`:
+Create a watermark with 0 degree rotation using scale factor 0.9 and render mode `stroke`:
 
 ```sh
 pdfcpu watermark 'This is a watermark, s:.9, r:0, m:1' test.pdf out.pdf
@@ -164,7 +164,7 @@ pdfcpu watermark 'This is a watermark, s:.9, r:0, m:1' test.pdf out.pdf
 
 <br>
 
-Create a watermark with a counter clock wise rotation of 45 degrees using scale factor 1, render mode `fill & stroke` and a fill color:
+Create a watermark with a counterclockwise rotation of 45 degrees using scale factor 1, render mode `fill & stroke` and a fill color:
 
 ```sh
 pdfcpu watermark 'This is a watermark, s:1, r:45, m:2, c:.2 .7 .9' test.pdf out.pdf
@@ -176,7 +176,7 @@ pdfcpu watermark 'This is a watermark, s:1, r:45, m:2, c:.2 .7 .9' test.pdf out.
 
 <br>
 
-Create a watermark with default rotation of 45 using scale factor 1 and font size 48, default render mode `fill` and a fill color and an opacity of 0.6:
+Create a watermark with default rotation, using scale factor 1, font size 48, default render mode `fill`, a fill color and set opacity to 0.6:
 
 ```sh
 pdfcpu watermark 'Draft, p:48, s:1, c:.8 .8 .4, o:.6' test.pdf out.pdf
@@ -186,35 +186,81 @@ pdfcpu watermark 'Draft, p:48, s:1, c:.8 .8 .4, o:.6' test.pdf out.pdf
   <img style="border-color:silver" border="1" src="resources/wmt3.png" height="300">
 </p>
 
+<br>
+Let's assume we have a PDF where even pages are blank. We can add a watermark for theses pages saying "Intentionally left blank" like so:
 
+```sh
+pdfcpu watermark -pages even 'Intentionally left blank" test.pdf out.pdf
+```
 
-
-
-
-Create an image based watermark:
+We also could have used `pdfcpu stamp`. There is really no difference since we apply only to empty pages here.
 
 <br>
 
-Create a PDF based watermark:
+### Image Based Watermarks
+
+Create a watermark using defaults only:
+```sh
+pdfcpu watermark 'pic.jpg' test.pdf out.pdf
+```
 
 <p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmImageSample.png" height="300">
+  <img style="border-color:silver" border="1" src="resources/wmi.png" height="300">
 </p>
+
+<br>
+
+Create a watermark using 0 degree rotation and relative scaling of 1.0:
+
+```sh
+pdfcpu watermark 'pic.jpg, s:1 rel, r:0' test.pdf out.pdf
+```
 
 <p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmPDFSample.jpg" height="300">
+  <img style="border-color:silver" border="1" src="resources/wmi1rel.png" height="300">
 </p>
 
+<br>
+
+Create a watermark using 0 degree rotation and absolute scaling of 1.0:
+
+```sh
+pdfcpu watermark 'pic.jpg, s:1 abs, r:0' test.pdf out.pdf
+```
 
 <p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmTextSample.png" height="300">
+  <img style="border-color:silver" border="1" src="resources/wmi1abs.png" height="300">
 </p>
 
+<br>
+
+Create a watermark using a clockwise rotation of 30 degrees and absolute scaling of 1.0:
+
+```sh
+pdfcpu watermark 'pic.jpg, r:-30, s:1 abs' test.pdf out.pdf
+```
 <p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmText2Sample.png" height="300">
+  <img style="border-color:silver" border="1" src="resources/wmi2.png" height="300">
 </p>
 
-e.g. 'Draft'                                                  'logo.png'
-     'Draft, d:2'                                             'logo.tif, o:0.5, s:0.5 abs, r:0'
-     'Intentionally left blank, s:.75 abs, p:48'              'some.pdf, r:45'
-     'Confidental, f:Courier, s:0.75, c: 0.5 0.0 0.0, r:20'   'some.pdf:3, r:-90, s:0.75'
+<br>
+
+Create a watermark using a clockwise rotation of 30 degrees and absolute scaling of 0.25:
+
+```sh
+pdfcpu watermark 'pic.jpg, r:-30, s:.25 abs' test.pdf out.pdf
+```
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmi4.png" height="300">
+</p>
+
+### PDF Based Watermarks
+
+
+'logo.png'
+
+'logo.tif, o:0.5, s:0.5 abs, r:0'
+
+'some.pdf, r:45'
+
+'some.pdf:3, r:-90, s:0.75'

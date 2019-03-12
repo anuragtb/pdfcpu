@@ -135,32 +135,87 @@ pdfcpu stamp 'This is a stamp, s:1' test.pdf out.pdf
   <img style="border-color:silver" border="1" src="resources/stt11.png" height="100">
 </p>
 
-Create a text based stamp:
-
 <br>
 
-Create an image based stamp:
+Create a stamp along the second diagonale using scale factor 0.9, default render mode `fill` and a fill color:
 
-<br>
-
-Create a PDF based stamp:
-
+```sh
+pdfcpu stamp 'This is a stamp, s:.9, d:2, c:.6 .2 .9' test.pdf out.pdf
+```
 
 <p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmImageSample.png" height="300">
+  <img style="border-color:silver" border="1" src="resources/stt41.png" height="300">
 </p>
 
+<br>
+
+Create a stamp with 0 degree rotation using scale factor 0.9 and render mode `stroke`:
+
+```sh
+pdfcpu stamp 'This is a stamp, s:.9, r:0, m:1' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/stt42.png" height="300">
+</p>
+
+<br>
+
+Create a stamp with a counterclockwise rotation of 45 degrees using scale factor 1, render mode `fill & stroke` and a fill color:
+
+```sh
+pdfcpu stamp 'This is a stamp, s:1, r:45, m:2, c:.2 .7 .9' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/stt43.png" height="300">
+</p>
+
+<br>
+
+Create a stamp with default rotation, using scale factor 1, font size 48, default render mode `fill`, a fill color and increasing opacity from 0.3 to 1. By setting an opacity < 1 you can fake a watermark. This may be useful in scenarios where `pdfcpu watermark` does not produce satisfying results for a particular PDF file:
+
+```sh
+pdfcpu stamp 'Draft, p:48, s:1, c:.8 .8 .4, o:.3' test.pdf out1.pdf
+pdfcpu stamp 'Draft, p:48, s:1, c:.8 .8 .4, o:0.6' test.pdf out2.pdf
+pdfcpu stamp 'Draft, p:48, s:1, c:.8 .8 .4, o:1' test.pdf out3.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/stt33.png" height="200"> &nbsp;
+  <img style="border-color:silver" border="1" src="resources/stt32.png" height="200"> &nbsp;
+  <img style="border-color:silver" border="1" src="resources/stt31.png" height="200">
+</p>
+
+### Image Based Stamps
+
+Create a stamp using defaults only:
+```sh
+pdfcpu stamp 'pic.jpg' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/sti.png" height="300">
+</p>
+
+<br>
+
+Create a stamp using 0 degree rotation and relative scaling of 1.0:
+
+```sh
+pdfcpu stamp 'pic.jpg, s:1 rel, r:0' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/sti1.png" height="300">
+</p>
+
+<br>
+
+### PDF Based Stamps
 
 <p align="center">
   <img style="border-color:silver" border="1" src="resources/wmPDFSample.jpg" height="300">
-</p>
-
-<p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmTextSample.png" height="300">
-</p>
-
-<p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmText2Sample.png" height="300">
 </p>
 
 e.g. 'Draft'                                                  'logo.png'
