@@ -15,7 +15,7 @@ For a single image file create a single page PDF file and fill the grid with cop
 
 * Proper rotation based on involved aspect ratios will be applied during the process.
 
-* [Examples](#examples)
+* Have a look at some [examples](#examples).
 
 <br>
 

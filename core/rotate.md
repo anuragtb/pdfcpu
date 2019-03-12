@@ -4,9 +4,7 @@ layout: default
 
 # Rotate
 
-Rotate selected pages of `inFile` clockwise by a multiple of 90 degrees.
-
-Have a look at some [examples](#examples).
+Rotate selected pages of `inFile` clockwise by a multiple of 90 degrees. Have a look at some [examples](#examples).
 
 ## Usage
 
