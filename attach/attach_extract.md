@@ -5,7 +5,7 @@ layout: default
 # Extract Attachments
 
 This command extracts attachments from a PDF document. 
-If you want to remove an extracted document you can do this using [attach remove](attach_remove.md).
+If you want to remove an extracted document you can do this using [attach remove](attach_remove.md). Have a look at some [examples](#examples).
 
 ## Usage
 

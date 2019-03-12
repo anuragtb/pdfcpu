@@ -4,7 +4,7 @@ layout: default
 
 # Decrypt
 
-This command decrypts `inFile` and removes password protection. If provided the decrypted PDF will be written to `outFile` and `ìnFile` remains untouched.
+This command decrypts `inFile` and removes password protection. If provided the decrypted PDF will be written to `outFile` and `ìnFile` remains untouched. Have a look at some [examples](#examples).
 
 ## Usage
 

@@ -8,7 +8,7 @@ The PDF specification defines a set of permissions that may be set for encrypted
 Permissions go into effect anytime an encrypted document is opened with the *user password*.
 Providing the *owner password* which is also known as the *set permissions password* or *master password* will give full access to the document.
 
-`pdfcpu` provides minimal support for setting permissions. You can set either `all` or `none` permissions.
+`pdfcpu` provides minimal support for setting permissions. You can set either `all` or `none` permissions. Have a look at some [examples](#examples).
 
 ## Usage
 

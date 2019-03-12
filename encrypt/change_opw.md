@@ -4,7 +4,7 @@ layout: default
 
 # Change Owner Password
 
-This command changes the password which is also known as the *set permissions password* or the *master password*.
+This command changes the password which is also known as the *set permissions password* or the *master password*. Have a look at some [examples](#examples).
 
 ## Usage
 

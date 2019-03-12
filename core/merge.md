@@ -43,7 +43,7 @@ The following PDF elements are not carried over into the merged document:
 
 <br>
 
-## Example
+## Examples
 
 pdfcpu respects the order of the provided input files and merges accordingly. Merge three input files into `out.pdf` by concatenating `in3.pdf` to `in2.pdf` and the result to `in1.pdf`:
 

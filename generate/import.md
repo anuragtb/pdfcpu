@@ -4,7 +4,7 @@ layout: default
 
 # Import
 
-Convert one or more image files into a PDF file.
+Convert one or more image files into a PDF file. Have a look at some [examples](#examples).
 
 * Every image file will be rendered onto a separate page.
 

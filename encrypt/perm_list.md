@@ -5,7 +5,7 @@ layout: default
 # List Permissions
 
 The PDF specification defines a set of permissions that may be set for encrypted documents.
-This command prints the current permission set.
+This command prints the current permission set. Have a look at some [examples](#examples).
 
 ## Usage
 

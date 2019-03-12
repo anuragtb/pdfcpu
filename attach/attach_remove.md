@@ -4,7 +4,7 @@ layout: default
 
 # Remove Attachments
 
-This command removes previously attached files from a PDF document.
+This command removes previously attached files from a PDF document. Have a look at some [examples](#examples).
 
 ## Usage
 

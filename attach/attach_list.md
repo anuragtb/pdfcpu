@@ -4,7 +4,7 @@ layout: default
 
 # List Attachments
 
-A PDF attachment is any file previously attached to a PDF document. This command outputs a list of all attachments.
+A PDF attachment is any file previously attached to a PDF document. This command outputs a list of all attachments. Have a look at some [examples](#examples).
 
 ## Usage
 

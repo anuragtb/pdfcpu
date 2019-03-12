@@ -4,7 +4,7 @@ layout: default
 
 # Change User Password
 
-This command changes the password which is also known as the *open doc password*.
+This command changes the password which is also known as the *open doc password*. Have a look at some [examples](#examples).
 
 ## Usage
 
