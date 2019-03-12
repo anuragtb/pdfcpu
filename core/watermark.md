@@ -6,10 +6,16 @@ layout: default
 
 Add a watermark to selected pages of `inFile`. You can watermark `inFile` exactly once.
 
+Jump to [examples](#examples)
+
 The watermark is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based watermarks you can also configure font name, font size, fill color and render mode. 
 
-Warning:<br>
-A watermark resides in the background of a page. How much of the watermark will be rendered visible on a page depends on the layers on top and the transparency involved. Eg. scanned PDF files usually consist of bitmap images spanning whole pages and will hide anything in the background including any watermark. For these cases use `pdfcpu stamp` with an opacity < 1 instead to get a similar result.
+---
+WARNING<br>
+A watermark resides in the background of a page. How much of the watermark will be rendered visible on a page depends on the layers on top and the transparency involved. This applies to PDF in general. Eg. scanned PDF files usually consist of bitmap images spanning whole pages and will hide anything in the background including any watermark. For these cases use `pdfcpu stamp` with an opacity < 1 instead to get a similar result.
+
+---
+
 
 ## Usage
 
@@ -20,8 +26,7 @@ pdfcpu watermark [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw owne
 
 
 ---
-NOTE
-
+NOTE<br>
 In the Adobe world a watermark is text or an image that appears either in front of or behind existing document content, like a stamp comment aka stamp annotation that anybody reading the PDF can open, edit, move around and delete. The difference here is that a watermark is integrated into a PDF page as a fixed element. Within `pdfcpu` the meaning of these terms is slightly different:
 
 * `stamp` is any *content* that appears in front of the existing page content - sitting on top of everything else on a page
