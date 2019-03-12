@@ -109,6 +109,7 @@ In addition for text based stamps:
 * render mode fill (`m:0`)
 
 You only have to specify parameters that differ from the default.
+
 <br>
 
 ## Examples
@@ -187,6 +188,8 @@ pdfcpu stamp 'Draft, p:48, s:1, c:.8 .8 .4, o:1' test.pdf out3.pdf
   <img style="border-color:silver" border="1" src="resources/stt31.png" height="200">
 </p>
 
+<br>
+
 ### Image Based Stamps
 
 Create a stamp using defaults only:
@@ -214,11 +217,24 @@ pdfcpu stamp 'pic.jpg, s:1 rel, r:0' test.pdf out.pdf
 
 ### PDF Based Stamps
 
+Create a stamp using defaults only. This will apply page 1 of `some.pdf`:
+
+```sh
+pdfcpu stamp 'some.pdf' test.pdf out.pdf
+```
+
 <p align="center">
-  <img style="border-color:silver" border="1" src="resources/wmPDFSample.jpg" height="300">
+  <img style="border-color:silver" border="1" src="resources/stp.png" height="300">
 </p>
 
-e.g. 'Draft'                                                  'logo.png'
-     'Draft, d:2'                                             'logo.tif, o:0.5, s:0.5 abs, r:0'
-     'Intentionally left blank, s:.75 abs, p:48'              'some.pdf, r:45'
-     'Confidental, f:Courier, s:0.75, c: 0.5 0.0 0.0, r:20'   'some.pdf:3, r:-90, s:0.75'
+<br>
+
+Create a stamp using defaults and page 2 of `some.pdf`, apply a 0 degree rotation and 0.3 relative scaling:
+
+```sh
+pdfcpu stamp 'some.pdf:2, r:0, s:.3' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/stp3.png" height="300">
+</p>

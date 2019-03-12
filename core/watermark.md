@@ -239,6 +239,7 @@ Create a watermark using a clockwise rotation of 30 degrees and absolute scaling
 ```sh
 pdfcpu watermark 'pic.jpg, r:-30, s:1 abs' test.pdf out.pdf
 ```
+
 <p align="center">
   <img style="border-color:silver" border="1" src="resources/wmi2.png" height="300">
 </p>
@@ -250,17 +251,27 @@ Create a watermark using a clockwise rotation of 30 degrees and absolute scaling
 ```sh
 pdfcpu watermark 'pic.jpg, r:-30, s:.25 abs' test.pdf out.pdf
 ```
+
 <p align="center">
   <img style="border-color:silver" border="1" src="resources/wmi4.png" height="300">
 </p>
 
 ### PDF Based Watermarks
 
+Create a watermark using defaults only. This will apply page 1 of `some.pdf`:
 
-'logo.png'
+```sh
+pdfcpu watermark 'some.pdf' test.pdf out.pdf
+```
 
-'logo.tif, o:0.5, s:0.5 abs, r:0'
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmp.png" height="300">
+</p>
 
-'some.pdf, r:45'
+<br>
 
-'some.pdf:3, r:-90, s:0.75'
+Create a watermark using defaults and page 2 of `some.pdf`:
+
+```sh
+pdfcpu watermark 'some.pdf:2' test.pdf out.pdf
+```
