@@ -4,6 +4,22 @@ layout: default
 
 # Watermark
 
+Add a watermark to selected pages of `inFile`. You can watermark `inFile` exactly once.
+
+The watermark is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based watermarks you can also configure font name, font size, fill color and render mode. 
+
+Warning:<br>
+A watermark resides in the background of a page. How much of the watermark will be rendered visible on a page depends on the layers on top and the transparency involved. Eg. scanned PDF files usually consist of bitmap images spanning whole pages and will hide anything in the background including any watermark. For these cases use `pdfcpu stamp` with an opacity < 1 instead to get a similar result.
+
+## Usage
+
+```
+pdfcpu watermark [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] description inFile [outFile]
+```
+
+
+
+---
 NOTE
 
 In the Adobe world a watermark is text or an image that appears either in front of or behind existing document content, like a stamp comment aka stamp annotation that anybody reading the PDF can open, edit, move around and delete. The difference here is that a watermark is integrated into a PDF page as a fixed element. Within `pdfcpu` the meaning of these terms is slightly different:
@@ -16,16 +32,6 @@ where *content* may be text, an image or a PDF page.
 
 
 ---
-<br>
-
-Add watermarks to selected pages of `inFile`. A watermark is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based watermarks you can also configure font name, font size, fill color and render mode.
-
-## Usage
-
-```
-pdfcpu watermark [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] description inFile [outFile]
-```
-
 <br>
 
 ### Flags
@@ -110,9 +116,80 @@ You only have to specify parameters that differ from the default.
 
 ## Examples
 
-Create a text based watermark:
+### Text Based Watermarks
+
+Create a watermark using defaults only:
+```sh
+pdfcpu watermark 'This is a watermark' test.pdf out.pdf
+```
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmt10.png" height="300">
+</p>
 
 <br>
+Create a watermark using scale factor 1:
+
+```sh
+pdfcpu watermark 'This is a watermark, s:1' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmt1.png" height="300"> &nbsp; &nbsp; &nbsp; &nbsp;
+  <img style="border-color:silver" border="1" src="resources/wmt11.png" height="100">
+</p>
+
+<br>
+
+Create a watermark along the second diagonale using scale factor 0.9, default render mode `fill` and a fill color:
+
+```sh
+pdfcpu watermark 'This is a watermark, s:.9, d:2, c:.6 .2 .9' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmt21.png" height="300">
+</p>
+
+<br>
+
+Create a watermark with a rotation of 0 degrees using scale factor 0.9 and a render mode `stroke`:
+
+```sh
+pdfcpu watermark 'This is a watermark, s:.9, r:0, m:1' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmt22.png" height="300">
+</p>
+
+<br>
+
+Create a watermark with a counter clock wise rotation of 45 degrees using scale factor 1, render mode `fill & stroke` and a fill color:
+
+```sh
+pdfcpu watermark 'This is a watermark, s:1, r:45, m:2, c:.2 .7 .9' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmt20.png" height="300">
+</p>
+
+<br>
+
+Create a watermark with default rotation of 45 using scale factor 1 and font size 48, default render mode `fill` and a fill color and an opacity of 0.6:
+
+```sh
+pdfcpu watermark 'Draft, p:48, s:1, c:.8 .8 .4, o:.6' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/wmt3.png" height="300">
+</p>
+
+
+
+
+
 
 Create an image based watermark:
 

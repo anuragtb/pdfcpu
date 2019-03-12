@@ -4,6 +4,20 @@ layout: default
 
 # Stamp
 
+Add a stamp to selected pages of `inFile`.
+
+The stamp is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based stamps you can also configure font name, font size, fill color and render mode.
+
+## Usage
+
+```
+pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] description inFile [outFile]
+```
+
+You can stamp or watermark `inFile` exactly once. It is highly recommended to make a backup of `inFile` before running this command or even better use `outFile`.
+<br>
+
+---
 NOTE
 
 In the Adobe world a watermark is text or an image that appears either in front of or behind existing document content, like a stamp comment aka stamp annotation that anybody reading the PDF can open, edit, move around and delete. The difference here is that a watermark is integrated into a PDF page as a fixed element. Within `pdfcpu` the meaning of these terms is slightly different:
@@ -15,16 +29,6 @@ In the Adobe world a watermark is text or an image that appears either in front 
 where *content* may be text, an image or a PDF page.
 
 ---
-<br>
-
-Add stamps to selected pages of `inFile`. A stamp is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based stamps you can also configure font name, font size, fill color and render mode.
-
-## Usage
-
-```
-pdfcpu stamp [-v(erbose)|vv] [-pages pageSelection] [-upw userpw] [-opw ownerpw] description inFile [outFile]
-```
-
 <br>
 
 ### Flags
@@ -108,6 +112,28 @@ You only have to specify parameters that differ from the default.
 <br>
 
 ## Examples
+
+### Text Based Stamps
+
+Create a stamp using defaults only:
+```sh
+pdfcpu stamp 'This is a stamp' test.pdf out.pdf
+```
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/stt10.png" height="300">
+</p>
+
+<br>
+Create a stamp using scale factor 1:
+
+```sh
+pdfcpu stamp 'This is a stamp, s:1' test.pdf out.pdf
+```
+
+<p align="center">
+  <img style="border-color:silver" border="1" src="resources/stt1.png" height="300"> &nbsp; &nbsp; &nbsp; &nbsp;
+  <img style="border-color:silver" border="1" src="resources/stt11.png" height="100">
+</p>
 
 Create a text based stamp:
 
