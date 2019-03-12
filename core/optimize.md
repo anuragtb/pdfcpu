@@ -6,6 +6,8 @@ layout: default
 
 Optimize `inFile` by getting rid of redundant page resources like embedded fonts and images and write the result to `outFile` maxing out PDF compression.
 
+Have a look at some [examples](#examples).
+
 ## Usage
 
 ```

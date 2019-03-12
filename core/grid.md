@@ -8,6 +8,8 @@ layout: default
 
 * Arrange image files into grid pages for enhanced browsing experience.
 
+* [Examples](#examples)
+
 
 ## Usage
 

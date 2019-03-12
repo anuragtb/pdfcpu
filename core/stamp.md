@@ -8,6 +8,8 @@ Add a stamp to selected pages of `inFile`.
 
 The stamp is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based stamps you can also configure font name, font size, fill color and render mode.
 
+Have a look at some [examples](#examples).
+
 ## Usage
 
 ```

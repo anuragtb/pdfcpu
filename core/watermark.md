@@ -6,9 +6,9 @@ layout: default
 
 Add a watermark to selected pages of `inFile`. You can watermark `inFile` exactly once.
 
-Jump to [examples](#examples)
+The watermark is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based watermarks you can also configure font name, font size, fill color and render mode.
 
-The watermark is centered on the page and using `description` you can configure various aspects like rotation, scaling and opacity. For text based watermarks you can also configure font name, font size, fill color and render mode. 
+Have a look at some [examples](#examples).
 
 ---
 WARNING<br>

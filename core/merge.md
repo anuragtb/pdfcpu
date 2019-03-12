@@ -6,6 +6,8 @@ layout: default
 
 Merge 2 or more PDF files into `outFile`.
 
+Have a look at some [examples](#examples).
+
 ## Usage
 
 ```

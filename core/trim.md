@@ -6,6 +6,8 @@ layout: default
 
 Generate a trimmed version of `inFile` for selected pages.
 
+Have a look at some [examples](#examples).
+
 ## Usage
 
 ```
