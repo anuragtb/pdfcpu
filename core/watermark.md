@@ -270,7 +270,7 @@ pdfcpu watermark 'some.pdf' test.pdf out.pdf
 
 <br>
 
-Create a watermark using defaults and page 2 of `some.pdf`:
+This is how to create a watermark using defaults and page 2 of `some.pdf`:
 
 ```sh
 pdfcpu watermark 'some.pdf:2' test.pdf out.pdf
